@@ -1,16 +1,12 @@
-import logo from './LogoKmv.jpeg';
-import './App.css';
+import RoutesKMV from "../src/general/RoutesKMV";
+import Header from './general/Header';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h1>KMV Clothing</h1>
-      </header>
-      <div>
-        <p>Ecommerce en construccion</p>
-      </div>
+      
+      <Header />
+      <RoutesKMV />
     </div>
   );
 }
