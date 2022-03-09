@@ -1,5 +1,5 @@
 import React from 'react'
-import '../style/cart.css'
+import '../style/cartKMV.css'
 
 const Cart = () => {
   return (

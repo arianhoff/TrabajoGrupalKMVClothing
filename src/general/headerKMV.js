@@ -1,6 +1,6 @@
 import React from 'react'
 import logo from '../LogoKmv.jpeg';
-import '../style/header.css'
+import '../style/headerKMV.css'
 
 const Header = () => {
   return (

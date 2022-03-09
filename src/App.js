@@ -1,5 +1,5 @@
-import RoutesKMV from "../src/general/routesKMV";
-import Header from './general/header';
+import RoutesKMV from "../src/general/routeKMV";
+import Header from './general/headerKMV';
 
 function App() {
   return (

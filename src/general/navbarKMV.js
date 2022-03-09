@@ -4,7 +4,7 @@ import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import { NavLink } from "react-router-dom"
-import '../style/navbar.css'
+import '../style/navbarKMV.css'
 
 
 const Navbar = () => {
