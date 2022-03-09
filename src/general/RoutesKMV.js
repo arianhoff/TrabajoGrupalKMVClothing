@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Home from "./Home"
-import Cart from "./Cart"
-import Navbar from "./Navbar";
+import Home from "./home"
+import Cart from "./cart"
+import Navbar from "./navbar";
 
 const RoutesKMV = () => {
     return(   
