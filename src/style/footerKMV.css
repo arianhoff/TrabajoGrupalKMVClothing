@@ -1,4 +1,56 @@
-.derechos {
-    background-color: black;
+
+  .fondo-footer {
+    position: absolute;
+    margin-left: 0px;
+    margin-top: 3909px;
+  }
+  .div-global {
+    
+  }
+  .first-div {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    margin-left: 500px;
+    margin-top: 4000px;
+  }
+  .first-h2 {
     color: white;
-}
+    font-family: "Roboto", sans-serif;
+  }
+  .first-p {
+    color: white;
+  }
+  .second-div {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    margin-left: 900px;
+    margin-top: 4000px;
+  }
+  .categories {
+    font-family: "Roboto", sans-serif;
+    color: white;
+  }
+  .options ul li {
+    list-style: none;
+    color: white;
+    font-family: "Roboto", sans-serif;
+  }
+  .third-div {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    margin-left: 1210px;
+    margin-top: 4000px;
+    color: white;
+  }
+  .contact {
+    font-family: "Roboto", sans-serif;
+  }
+  .ingreso {
+    margin-top: 5px;
+  }
+  .datos ul li {
+    list-style: none;
+  }
