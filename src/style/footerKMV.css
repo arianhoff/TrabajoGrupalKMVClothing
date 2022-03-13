@@ -1,66 +1,67 @@
+.div-global {
+  display: flex;
+  flex-direction: row;
+  background-image: url(../assets/imagenfooter.png);
+  width: 1920px;
+  height: 400px;
+  justify-content: space-around;
+}
+.fondo-footer {
+  position: absolute;
+}
+.first-div {
+  width: 400px;
+  height: 200px;
+  color: white;
+  margin-left: 350px;
+  margin-top: 90px;
+}
+.first-h2 {
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+.second-div {
+  width: 400px;
+  height: 200px;
+  margin-top: 90px;
+}
+.categories {
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+.options ul li {
+  list-style: none;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  margin-right: 35px;
+}
+.third-div {
+  color: white;
+  width: 400px;
+  height: 200px;
+  margin-right: 350px;
+  margin-top: 90px;
+}
+.contact {
+  font-family: "Roboto", sans-serif;
+}
+.ingreso {
+  margin-top: 5px;
+}
+.datos ul li {
+  margin-right: 30px;
+  list-style: none;
+  color: white;
+}
+.boton {
+  margin-left: 20px;
+}
+.derechos {
+  position: absolute;
+  background-color: black;
+  color: white;
+  margin-top: 380px;
+  width: 1920px;
+  font-size: 12px;
 
-  .fondo-footer {
-    position: absolute;
-    margin-left: 0px;
-    margin-top: 3909px;
-  }
-  .first-div {
-    position: absolute;
-    width: 300px;
-    height: 300px;
-    margin-left: 400px;
-    margin-top: 4000px;
-  }
-  .first-h2 {
-    color: white;
-    font-family: "Roboto", sans-serif;
-  }
-  .first-p {
-    color: white;
-  }
-  .second-div {
-    position: absolute;
-    width: 300px;
-    height: 300px;
-    margin-left: 850px;
-    margin-top: 4000px;
-  }
-  .categories {
-    font-family: "Roboto", sans-serif;
-    color: white;
-  }
-  .options ul li {
-    list-style: none;
-    color: white;
-    font-family: "Roboto", sans-serif;
-    margin-right: 35px;
-  }
-  .third-div {
-    position: absolute;
-    width: 300px;
-    height: 300px;
-    margin-left: 1260px;
-    margin-top: 4000px;
-    color: white;   
-  }
-  .contact {
-    font-family: "Roboto", sans-serif;
-  }
-  .ingreso {
-    margin-top: 5px;
-  }
-  .datos ul li {
-    margin-right: 30px;
-    list-style: none;
-  }
-  .boton {
-    margin-left: 20px;
-  }
- .derechos {
-   position: absolute;
-   width: 1870px;
-   height: 20px;
-   color: white;
-   margin-top: 4250px;
-   margin-left: 50px;
- }
+}
