@@ -4,14 +4,11 @@
     margin-left: 0px;
     margin-top: 3909px;
   }
-  .div-global {
-    
-  }
   .first-div {
     position: absolute;
     width: 300px;
     height: 300px;
-    margin-left: 500px;
+    margin-left: 400px;
     margin-top: 4000px;
   }
   .first-h2 {
@@ -25,7 +22,7 @@
     position: absolute;
     width: 300px;
     height: 300px;
-    margin-left: 900px;
+    margin-left: 850px;
     margin-top: 4000px;
   }
   .categories {
@@ -36,14 +33,15 @@
     list-style: none;
     color: white;
     font-family: "Roboto", sans-serif;
+    margin-right: 35px;
   }
   .third-div {
     position: absolute;
     width: 300px;
     height: 300px;
-    margin-left: 1210px;
+    margin-left: 1260px;
     margin-top: 4000px;
-    color: white;
+    color: white;   
   }
   .contact {
     font-family: "Roboto", sans-serif;
@@ -52,5 +50,17 @@
     margin-top: 5px;
   }
   .datos ul li {
+    margin-right: 30px;
     list-style: none;
   }
+  .boton {
+    margin-left: 20px;
+  }
+ .derechos {
+   position: absolute;
+   width: 1870px;
+   height: 20px;
+   color: white;
+   margin-top: 4250px;
+   margin-left: 50px;
+ }

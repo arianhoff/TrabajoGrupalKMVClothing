@@ -1,5 +1,6 @@
 .Home-body {
     background-color: #000000;
+    width: 1920px;
     min-height: 60vh;
     display: flex;
     flex-direction: column;

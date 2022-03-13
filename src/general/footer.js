@@ -1,14 +1,16 @@
 import React from "react";
-import Style from '../style/footerKMV.css'
-import Imagen from '../assets/imagenfooter.png'
+import Style from '../style/footerKMV.css';
+import Imagen from '../assets/imagenfooter.png';
+import logo from '../Logo.png';
 
 const Footer = () => {
   return (
     <>
       <div className="div-global">
+        
         <div className="fondo-footer">
           <img src={Imagen} alt="Imagen de fondo" />
-        </div> 
+        </div>
         <div className="first-div">
           <div className="first-h2">
             <h2>Sobre nosotros</h2>
@@ -61,8 +63,11 @@ const Footer = () => {
               type="Nombre"
               placeholder="Ingrese su Email"
             />
-            <button> Enviar </button>
+            <button className="boton"> Enviar </button>
           </div>
+        </div>
+        <div className="derechos">
+            <h4>Todos los derechos reservados / KMV Clothing / 2022</h4>
         </div>
       </div>
     </>
