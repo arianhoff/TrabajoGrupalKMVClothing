@@ -1,6 +1,6 @@
 .div-global {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   background-image: url(../assets/imagenfooter.png);
   width: 1920px;
   height: 400px;
@@ -63,5 +63,4 @@
   margin-top: 380px;
   width: 1920px;
   font-size: 12px;
-
-}
+};
