@@ -1,7 +1,5 @@
 import React from "react";
-import Style from '../style/footerKMV.css';
-import Imagen from '../assets/imagenfooter.png';
-import logo from '../Logo.png';
+import Style from "../style/footerKMV.css";
 
 const Footer = () => {
   return (
@@ -29,7 +27,7 @@ const Footer = () => {
           </div>
           <div className="options">
             <ul>
-              <li>
+              <li className="zap">
                 <a href="">Zapatillas</a>
               </li>
               <li>
@@ -70,3 +68,4 @@ const Footer = () => {
   );
 };
 export default Footer;
+
