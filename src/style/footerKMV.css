@@ -1,77 +1,5 @@
-/* .div-global {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  background-image: url(../assets/imagenfooter.png);
-  width: 1920px;
-  height: 400px;
-  justify-content: space-around;
-}
-.fondo-footer {
-  position: absolute;
-}
-.first-div {
-  width: 400px;
-  height: 200px;
-  color: white;
-  margin-left: 350px;
-  margin-top: 90px;
-}
-.first-h2 {
-  color: white;
-  font-family: "Roboto", sans-serif;
-}
-.second-div {
-  width: 400px;
-  height: 200px;
-  margin-top: 90px;
-}
-.categories {
-  font-family: "Roboto", sans-serif;
-  color: white;
-}
-.options ul li {
-  list-style: none;
-  color: white;
-  font-family: "Roboto", sans-serif;
-  margin-right: 35px;
-}
-.third-div {
-  color: white;
-  width: 400px;
-  height: 200px;
-  margin-right: 350px;
-  margin-top: 90px;
-}
-.contact {
-  font-family: "Roboto", sans-serif;
-}
-.ingreso {
-  margin-top: 5px;
-}
-.datos ul li {
-  margin-right: 30px;
-  list-style: none;
-  color: white;
-}
-.boton {
-  margin-left: 20px;
-}
-.derechos {
-  position: absolute;
-  background-color: black;
-  color: white;
-  margin-top: 380px;
-  width: 1920px;
-  font-size: 12px;
-}; */
-
 .footer-global {
   background-image: url(../assets/imagenfooter.png);
-  width: 1920px;
-  height: 400px;
-}
-.flex-global {
-
 }
 .categorias {
   padding-top: 75px;
@@ -81,7 +9,7 @@
 }
 .titulo-cat {
   font-size: 25px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 .opciones {
   padding-top: 25px;
@@ -89,37 +17,45 @@
 .contacto {
   padding-top: 75px;
   padding-left: 50px;
-  padding-right: 100px;
+  padding-right: 50px;
   color: white;
   line-height: 30px;
 }
 .contact-text {
   font-size: 25px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 .boton-texto {
   padding-top: 20px;
 }
 .boton {
-  padding-top: 10px;
-  padding-right: 380px;
+  padding-top: 20px;
+  padding-bottom: 50px;
 }
 .nosotros {
   padding-top: 75px;
-  padding-left: 100px;
+  padding-left: 50px;
   padding-right: 50px;
   color: white;
 }
 .sobre-text {
   font-size: 25px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 .descripcion {
-  padding-top: 20px
+  padding-top: 20px;
 }
 .apellido {
   padding-left: 5px;
 }
 .email {
   padding-top: 10px;
+}
+.global {
+  display: flex;
+  justify-content: center;
+}
+.global img {
+  width: 100%;
+  height: auto;
 }
