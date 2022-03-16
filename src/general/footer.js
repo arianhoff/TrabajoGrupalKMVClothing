@@ -5,7 +5,6 @@ import "../style/footerKMV.css";
 import Item from "@mui/material/ListItem";
 import { Button } from "@mui/material";
 import { TextField } from "@mui/material";
-import { Link } from "@mui/material";
 
 export default function Footer() {
   return (
@@ -13,8 +12,8 @@ export default function Footer() {
       <Grid container spacing={2} className="flex-global">
         <Grid item xs={12} lg={4}>
           <div className="nosotros">
-            <Box>Sobre Nosotros</Box>
-            <p>
+            <Box className="sobre-text">Sobre Nosotros</Box>
+            <p className="descripcion">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
               corporis expedita veritatis, eius praesentium, neque
               exercitationem voluptatem maiores debitis aspernatur sed qui rem
@@ -24,8 +23,8 @@ export default function Footer() {
         </Grid>
         <Grid item xs={2} lg={4}>
           <div className="categorias">
-            <Box>Categorías</Box>
-            <Grid container spacing={2}>
+            <Box className="titulo-cat">Categorías</Box>
+            <Grid className="opciones" container spacing={2}>
               <Grid item xs={6} md={4}>
                 <Item>Zapatillas</Item>
               </Grid>
@@ -49,28 +48,34 @@ export default function Footer() {
         </Grid>
         <Grid item xs={12} lg={4}>
           <div className="contacto">
-            <Box>Contacto</Box>
-            <Box>
-              <Link href="/" color="inherit">
-                KMVclothing@gmail.com
-              </Link>
+            <Box className="contact-text">Contacto</Box>
+            <Box className="email">
+              <TextField
+                id="outlined-basic"
+                label="Email"
+                variant="outlined"
+              />
             </Box>
-            <Box>
-              <Link href="/" color="inherit">
-                Tel.: 03493 - 15400994
-              </Link>
+            <Box className="boton-texto">
+              <TextField
+                helperText="Por favor ingrese su Nombre"
+                id="demo-helper-text-aligned"
+                label="Nombre"
+                className="nombre"
+              />
+              <TextField
+                helperText="Por favor ingrese su Apellido "
+                id="demo-helper-text-aligned-no-helper"
+                label="Apellido"
+                className="apellido"
+              />
             </Box>
-            <Box>
-              <TextField id="outlined-basic" label="Email" variant="outlined" />
-            </Box>
-            <Box>
-              <Link href="/" color="inherit">
-                <Button variant="contained">Enviar</Button>
-              </Link>
+            <Box className="boton">
+              <Button variant="contained">Enviar</Button>
             </Box>
           </div>
         </Grid>
       </Grid>
     </Box>
   );
-};
+}
