@@ -67,4 +67,24 @@
 
 .footer-global {
   background-image: url(../assets/imagenfooter.png);
+  width: 1920px;
+  height: 400px;
+}
+.flex-global {
+
+}
+.categorias {
+  padding-top: 100px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.contacto {
+  padding-top: 100px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.nosotros {
+  padding-top: 100px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
