@@ -1,4 +1,4 @@
-.div-global {
+/* .div-global {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   background-image: url(../assets/imagenfooter.png);
@@ -63,5 +63,8 @@
   margin-top: 380px;
   width: 1920px;
   font-size: 12px;
-};
+}; */
 
+.footer-global {
+  background-image: url(../assets/imagenfooter.png);
+}
