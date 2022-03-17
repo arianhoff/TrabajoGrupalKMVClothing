@@ -5,8 +5,8 @@ const Home = () => {
   return (
     <div>
       <body className="Home-body">
-        <h2> Hola desde el home </h2>{" "}
-      </body>{" "}
+        <h2> Hola desde el home </h2>
+      </body>
     </div>
   );
 };
