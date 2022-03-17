@@ -1,13 +1,14 @@
 import React from "react";
-import "../style/homeKMV.css";
+
+import "./homeCardKMV";
+
+import ActionAreaCard from "./homeCardKMV";
 
 const Home = () => {
   return (
-    <div>
-      <body className="Home-body">
-        <h2> Hola desde el home </h2>{" "}
-      </body>{" "}
-    </div>
+    <body className="Home-body">
+      <ActionAreaCard />
+    </body>
   );
 };
 
