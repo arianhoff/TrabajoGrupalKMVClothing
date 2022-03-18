@@ -64,12 +64,11 @@ const CardImg = [
 
 export default function ActionAreaCard() {
   return (
-    <div className="padre">
       <Box sx={{ flexGrow: 1 }} className="box-global">
-        <Grid container spacing={1}>
+        <Grid container spacing={2}>
           {CardImg.map((element, i) => {
             return (
-              <Grid item xs={12} lg={3} key={element.key}>
+              <Grid item xs={12} sm={6} md={4} lg={3} key={element.key}>
                 <Box className="Cart">
                   <div className="Cart-div">
                     <div className="Cart-imagen">
@@ -86,6 +85,5 @@ export default function ActionAreaCard() {
           })}
         </Grid>
       </Box>
-    </div>
   );
 }

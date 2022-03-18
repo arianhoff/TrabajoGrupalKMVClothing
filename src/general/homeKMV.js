@@ -1,14 +1,14 @@
 import React from "react";
-
+import Box from "@mui/material/Box";
 import "./homeCardKMV";
 
 import ActionAreaCard from "./homeCardKMV";
 
 const Home = () => {
   return (
-    <body className="Home-body">
+    <Box className="Home-body">
       <ActionAreaCard />
-    </body>
+    </Box>
   );
 };
 
