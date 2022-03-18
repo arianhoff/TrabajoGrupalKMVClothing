@@ -1,0 +1,61 @@
+.footer-global {
+  background-image: url(../assets/imagenfooter.png);
+}
+.categorias {
+  padding-top: 75px;
+  padding-left: 50px;
+  padding-right: 50px;
+  color: white;
+}
+.titulo-cat {
+  font-size: 25px;
+  font-family: "Roboto", sans-serif;
+}
+.opciones {
+  padding-top: 25px;
+}
+.contacto {
+  padding-top: 75px;
+  padding-left: 50px;
+  padding-right: 50px;
+  color: white;
+  line-height: 30px;
+}
+.contact-text {
+  font-size: 25px;
+  font-family: "Roboto", sans-serif;
+}
+.boton-texto {
+  padding-top: 20px;
+}
+.boton {
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+.nosotros {
+  padding-top: 75px;
+  padding-left: 50px;
+  padding-right: 50px;
+  color: white;
+}
+.sobre-text {
+  font-size: 25px;
+  font-family: "Roboto", sans-serif;
+}
+.descripcion {
+  padding-top: 20px;
+}
+.apellido {
+  padding-left: 5px;
+}
+.email {
+  padding-top: 10px;
+}
+.global {
+  display: flex;
+  justify-content: center;
+}
+.global img {
+  width: 100%;
+  height: auto;
+}
