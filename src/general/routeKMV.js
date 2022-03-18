@@ -1,7 +1,10 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Home from "./homeKMV"
-import Cart from "./cartKMV"
+import Home from "./homeKMV";
+import Cart from "./cartKMV";
 import Navbar from "./navbarKMV";
+import Footer from "./footer";
+import RightsKMV from "./rightsKMV.js";
+
 
 const RoutesKMV = () => {
     return(   
@@ -11,6 +14,8 @@ const RoutesKMV = () => {
                 <Route path="/" element={ <Home/>}/>
                 <Route path="/cart" element={ <Cart/>}/>
             </Routes>
+            <Footer />
+            <RightsKMV />
         </Router>
     )
 }
