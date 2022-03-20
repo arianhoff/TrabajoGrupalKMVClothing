@@ -54,21 +54,29 @@ export default function Footer() {
                 <TextField
                   id="outlined-basic"
                   label="Email"
-                  variant="outlined"
+                  variant="filled"
+                  size="small"
+                  style={{ width: "30%" }}
                 />
               </Box>
               <Box className="boton-texto">
                 <TextField
-                  helperText="Por favor ingrese su Nombre"
+                  helperText="Ingrese su Nombre"
                   id="demo-helper-text-aligned"
                   label="Nombre"
                   className="nombre"
+                  variant="filled"
+                  size="small"
+                  style={{ width: "40%" }}
                 />
                 <TextField
-                  helperText="Por favor ingrese su Apellido "
+                  helperText="Ingrese su Apellido "
                   id="demo-helper-text-aligned-no-helper"
                   label="Apellido"
                   className="apellido"
+                  variant="filled"
+                  size="small"
+                  style={{ width: "40%" }}
                 />
               </Box>
               <Box className="boton">
