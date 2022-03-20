@@ -25,7 +25,7 @@ export default function Footer() {
           <Grid item xs={12} sm={4}>
             <div className="categorias">
               <Box className="titulo-cat">Categorías</Box>
-              <Grid className="opciones" container spacing={2}>
+              <Grid className="opciones" container spacing={1}>
                 <Grid item xs={12} md={4}>
                   <Item>Zapatillas</Item>
                 </Grid>
