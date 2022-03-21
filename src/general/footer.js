@@ -10,6 +10,9 @@ export default function Footer() {
   return (
     <div className="global">
       <Box sx={{ flexGrow: 1 }} className="footer-global">
+        <Grid>
+          <Link><img href="../"></img></Link>
+        </Grid>
         <Grid container spacing={2} className="flex-global">
           <Grid item xs={12} sm={4}>
             <div className="nosotros">
