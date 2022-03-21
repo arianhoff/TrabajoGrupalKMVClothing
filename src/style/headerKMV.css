@@ -3,8 +3,8 @@
 
 .principal{
   margin-top:auto;
-  width: 100%;
-  height:800px;
+  width:100%;
+  height:1000px;
   background-color:white;
   display: flex;
   justify-content: center;
@@ -25,5 +25,12 @@ align-items: center;
 
 }
 .descripcionPortada{
-  color: aliceblue;
+  font-size: 35px;
+  color:white;
+
+  border: 7px solid white;
+  border-radius: 20px;
+ 
+  justify-content: center;
+  
 }
