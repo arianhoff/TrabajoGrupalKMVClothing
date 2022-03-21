@@ -14,7 +14,7 @@
   justify-content: center;
 }
 .chips-sup {
-  padding-top: 40px;
+  padding-top: 25px;
   display: flex;
   justify-content: space-around;
 }
@@ -89,7 +89,4 @@
 }
 .apellido-classname {
   color: aliceblue !important;
-}
-.pantalones-classname {
-  background-color: aliceblue !important;
-}
+};

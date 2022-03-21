@@ -7,26 +7,6 @@ import { TextField } from "@mui/material";
 import "../assets/home.png";
 import Chip from "@mui/material/Chip";
 
-const CssTextField = styled(TextField)({
-  '& label.Mui-focused': {
-    color: 'green',
-  },
-  '& .MuiInput-underline:after': {
-    borderBottomColor: 'green',
-  },
-  '& .MuiOutlinedInput-root': {
-    '& fieldset': {
-      borderColor: 'red',
-    },
-    '&:hover fieldset': {
-      borderColor: 'yellow',
-    },
-    '&.Mui-focused fieldset': {
-      borderColor: 'green',
-    },
-  },
-});
-
 export default function Footer() {
   return (
     <div className="global">
@@ -90,6 +70,7 @@ export default function Footer() {
               <Box className="chips-end">
                 <Chip
                   label="Accesorios"
+                  component="a"
                   href="/"
                   variant="filled"
                   clickable
@@ -98,6 +79,7 @@ export default function Footer() {
                 />
                 <Chip
                   label="Zapatos"
+                  component="a"
                   href="/"
                   variant="filled"
                   clickable
@@ -123,7 +105,6 @@ export default function Footer() {
               </Box>
               <Box className="boton-texto">
                 <TextField
-                  helperText="Ingrese su Nombre"
                   id="demo-helper-text-aligned"
                   label="Nombre"
                   variant="outlined"
@@ -133,7 +114,6 @@ export default function Footer() {
                   InputLabelProps={{ className: "nombre-classname" }}
                 />
                 <TextField
-                  helperText="Ingrese su Apellido "
                   id="demo-helper-text-aligned-no-helper"
                   label="Apellido"
                   variant="outlined"
@@ -144,7 +124,7 @@ export default function Footer() {
                 />
               </Box>
               <Box className="boton">
-                <Button href="/" variant="contained">
+                <Button href="/" variant="contained" className="boton-classname" InputLabelProps={("boton-classname")}>
                   Enviar
                 </Button>
               </Box>
