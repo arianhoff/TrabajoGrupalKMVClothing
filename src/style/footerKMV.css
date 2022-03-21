@@ -2,7 +2,7 @@
   background-image: url(../assets/imagenfooter.png);
 }
 .categorias {
-  padding-top: 75px;
+  padding-top: 60px;
   padding-left: 50px;
   padding-right: 50px;
   color: white;
@@ -13,12 +13,26 @@
   display: flex;
   justify-content: center;
 }
+.chips-sup {
+  padding-top: 40px;
+  display: flex;
+  justify-content: space-around;
+}
+.chips-med {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+.chips-end {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
 .opciones {
   padding-top: 25px;
 }
 .contacto {
-  padding-top: 75px;
-  padding-right: 50px;
+  padding-top: 60px;
   color: white;
   line-height: 30px;
 }
@@ -38,7 +52,7 @@
   justify-content: center;
 }
 .nosotros {
-  padding-top: 75px;
+  padding-top: 60px;
   padding-left: 50px;
   padding-right: 50px;
   color: white;
