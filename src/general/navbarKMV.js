@@ -21,8 +21,8 @@ const Navbar = () => {
           borderRadius: 1,
         }}
       >
-             <NavLink to="/" activeClassName="active"> Inicio</NavLink>
-             <NavLink to="/Cart" activeClassName="active"> Carrito</NavLink>
+             <NavLink to="/" activeclassname="active"> Inicio</NavLink>
+             <NavLink to="/Cart" activeclassname="active"> Carrito</NavLink>
         </Typography>
       </Toolbar>
     </AppBar>
