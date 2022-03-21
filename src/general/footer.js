@@ -100,7 +100,7 @@ export default function Footer() {
                   size="small"
                   style={{ width: "30%" }}
                   className="email-classname"
-                  InputLabelProps={{ className: "email-classname" }}
+                  inputlabelprops={{ className: "email-classname" }}
                 />
               </Box>
               <Box className="boton-texto">
@@ -111,7 +111,7 @@ export default function Footer() {
                   size="small"
                   style={{ width: "40%" }}
                   className="nombre-classname"
-                  InputLabelProps={{ className: "nombre-classname" }}
+                  inputlabelprops={{ className: "nombre-classname" }}
                 />
                 <TextField
                   id="demo-helper-text-aligned-no-helper"
@@ -120,11 +120,11 @@ export default function Footer() {
                   size="small"
                   style={{ width: "40%" }}
                   className="apellido-classname"
-                  InputLabelProps={{ className: "apellido-classname" }}
+                  inputlabelprops={{ className: "apellido-classname" }}
                 />
               </Box>
               <Box className="boton">
-                <Button href="/" variant="contained" className="boton-classname" InputLabelProps={("boton-classname")}>
+                <Button href="/" variant="contained" className="boton-classname" inputlabelprops={("boton-classname")}>
                   Enviar
                 </Button>
               </Box>
