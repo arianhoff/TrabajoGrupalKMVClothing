@@ -7,6 +7,25 @@ import { TextField } from "@mui/material";
 import "../assets/home.png";
 import Chip from "@mui/material/Chip";
 
+const CssTextField = styled(TextField)({
+  '& label.Mui-focused': {
+    color: 'green',
+  },
+  '& .MuiInput-underline:after': {
+    borderBottomColor: 'green',
+  },
+  '& .MuiOutlinedInput-root': {
+    '& fieldset': {
+      borderColor: 'red',
+    },
+    '&:hover fieldset': {
+      borderColor: 'yellow',
+    },
+    '&.Mui-focused fieldset': {
+      borderColor: 'green',
+    },
+  },
+});
 
 export default function Footer() {
   return (
@@ -89,7 +108,7 @@ export default function Footer() {
             </div>
           </Grid>
           <Grid item xs={12} sm={4}>
-            <div className="contacto">
+            <form className="contacto">
               <Box className="contact-text">Contacto</Box>
               <Box className="email">
                 <TextField
@@ -98,6 +117,8 @@ export default function Footer() {
                   variant="outlined"
                   size="small"
                   style={{ width: "30%" }}
+                  className="email-classname"
+                  InputLabelProps={{ className: "email-classname" }}
                 />
               </Box>
               <Box className="boton-texto">
@@ -108,6 +129,8 @@ export default function Footer() {
                   variant="outlined"
                   size="small"
                   style={{ width: "40%" }}
+                  className="nombre-classname"
+                  InputLabelProps={{ className: "nombre-classname" }}
                 />
                 <TextField
                   helperText="Ingrese su Apellido "
@@ -116,6 +139,8 @@ export default function Footer() {
                   variant="outlined"
                   size="small"
                   style={{ width: "40%" }}
+                  className="apellido-classname"
+                  InputLabelProps={{ className: "apellido-classname" }}
                 />
               </Box>
               <Box className="boton">
@@ -123,7 +148,7 @@ export default function Footer() {
                   Enviar
                 </Button>
               </Box>
-            </div>
+            </form>
           </Grid>
         </Grid>
       </Box>

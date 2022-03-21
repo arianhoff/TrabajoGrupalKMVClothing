@@ -80,3 +80,16 @@
   width: 100%;
   height: auto;
 }
+.email-classname {
+  color: aliceblue !important;
+  border-radius: 5px !important;
+}
+.nombre-classname {
+  color: aliceblue !important;
+}
+.apellido-classname {
+  color: aliceblue !important;
+}
+.pantalones-classname {
+  background-color: aliceblue !important;
+}
