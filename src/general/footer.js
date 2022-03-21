@@ -2,9 +2,10 @@ import * as React from "react";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 import "../style/footerKMV.css";
-import Item from "@mui/material/ListItem";
 import { Button } from "@mui/material";
 import { TextField } from "@mui/material";
+import "../assets/home.png";
+import Chip from "@mui/material/Chip";
 
 export default function Footer() {
   return (
@@ -25,56 +26,109 @@ export default function Footer() {
           <Grid item xs={12} sm={4}>
             <div className="categorias">
               <Box className="titulo-cat">Categorías</Box>
-              <Grid className="opciones" container spacing={2}>
-                <Grid item xs={12} md={4}>
-                  <Item>Zapatillas</Item>
-                </Grid>
-                <Grid item xs={12} md={4}>
-                  <Item>Pantalones</Item>
-                </Grid>
-                <Grid item xs={12} md={4}>
-                  <Item>Camperas</Item>
-                </Grid>
-                <Grid item xs={12} md={4}>
-                  <Item>Accesorios</Item>
-                </Grid>
-                <Grid item xs={12} md={4}>
-                  <Item>Ropa interior</Item>
-                </Grid>
-                <Grid item xs={12} md={4}>
-                  <Item>Remeras</Item>
-                </Grid>
-              </Grid>
+              <Box className="chips-sup">
+                <Chip
+                  label="Pantalones"
+                  component="a"
+                  href="/"
+                  variant="filled"
+                  clickable
+                  color="primary"
+                  className="pantalones"
+                  style={{ width: "40%" }}
+                />
+                <Chip
+                  label="Remeras"
+                  component="a"
+                  href="/"
+                  variant="filled"
+                  clickable
+                  color="primary"
+                  style={{ width: "40%" }}
+                />
+              </Box>
+              <Box className="chips-med">
+                <Chip
+                  label="Zapatillas"
+                  component="a"
+                  href="/"
+                  variant="filled"
+                  clickable
+                  color="primary"
+                  style={{ width: "40%" }}
+                />
+                <Chip
+                  label="Camperas"
+                  component="a"
+                  href="/"
+                  variant="filled"
+                  clickable
+                  color="primary"
+                  style={{ width: "40%" }}
+                />
+              </Box>
+              <Box className="chips-end">
+                <Chip
+                  label="Accesorios"
+                  component="a"
+                  href="/"
+                  variant="filled"
+                  clickable
+                  color="primary"
+                  style={{ width: "40%" }}
+                />
+                <Chip
+                  label="Zapatos"
+                  component="a"
+                  href="/"
+                  variant="filled"
+                  clickable
+                  color="primary"
+                  style={{ width: "40%" }}
+                />
+              </Box>
             </div>
           </Grid>
           <Grid item xs={12} sm={4}>
-            <div className="contacto">
+            <form className="contacto">
               <Box className="contact-text">Contacto</Box>
               <Box className="email">
                 <TextField
                   id="outlined-basic"
                   label="Email"
                   variant="outlined"
+                  size="small"
+                  style={{ width: "30%" }}
+                  className="email-classname"
+                  InputLabelProps={{ className: "email-classname" }}
                 />
               </Box>
               <Box className="boton-texto">
                 <TextField
-                  helperText="Por favor ingrese su Nombre"
                   id="demo-helper-text-aligned"
                   label="Nombre"
-                  className="nombre"
+                  variant="outlined"
+                  size="small"
+                  style={{ width: "40%" }}
+                  className="nombre-classname"
+                  InputLabelProps={{ className: "nombre-classname" }}
                 />
                 <TextField
-                  helperText="Por favor ingrese su Apellido "
                   id="demo-helper-text-aligned-no-helper"
                   label="Apellido"
-                  className="apellido"
+                  variant="outlined"
+                  size="small"
+                  style={{ width: "40%" }}
+                  className="apellido-classname"
+                  InputLabelProps={{ className: "apellido-classname" }}
                 />
               </Box>
               <Box className="boton">
-                <Button variant="contained">Enviar</Button>
+                <Button href="/" variant="contained" className="boton-classname" InputLabelProps={("boton-classname")}>
+                  Enviar
+                </Button>
               </Box>
-            </div>
+            </form>
           </Grid>
         </Grid>
       </Box>

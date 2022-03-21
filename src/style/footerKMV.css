@@ -2,45 +2,66 @@
   background-image: url(../assets/imagenfooter.png);
 }
 .categorias {
-  padding-top: 75px;
+  padding-top: 60px;
   padding-left: 50px;
   padding-right: 50px;
   color: white;
 }
 .titulo-cat {
-  font-size: 25px;
+  font-size: 20px;
   font-family: "Roboto", sans-serif;
+  display: flex;
+  justify-content: center;
+}
+.chips-sup {
+  padding-top: 25px;
+  display: flex;
+  justify-content: space-around;
+}
+.chips-med {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+.chips-end {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-around;
 }
 .opciones {
   padding-top: 25px;
 }
 .contacto {
-  padding-top: 75px;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-top: 60px;
   color: white;
   line-height: 30px;
 }
 .contact-text {
-  font-size: 25px;
+  font-size: 20px;
   font-family: "Roboto", sans-serif;
+  display: flex;
+  justify-content: center;
 }
 .boton-texto {
   padding-top: 20px;
 }
 .boton {
-  padding-top: 20px;
+  padding-top: 10px;
   padding-bottom: 50px;
+  display: flex;
+  justify-content: center;
 }
 .nosotros {
-  padding-top: 75px;
+  padding-top: 60px;
   padding-left: 50px;
   padding-right: 50px;
   color: white;
 }
 .sobre-text {
-  font-size: 25px;
+  font-size: 20px;
   font-family: "Roboto", sans-serif;
+  display: flex;
+  justify-content: center;
 }
 .descripcion {
   padding-top: 20px;
@@ -59,3 +80,13 @@
   width: 100%;
   height: auto;
 }
+.email-classname {
+  color: aliceblue !important;
+  border-radius: 5px !important;
+}
+.nombre-classname {
+  color: aliceblue !important;
+}
+.apellido-classname {
+  color: aliceblue !important;
+};
