@@ -2,35 +2,32 @@
 
 
 .principal{
-  margin-top:auto;
-  width:100%;
-  height:1000px;
-  background-color:white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    margin-top:auto;
+    width:100%;
+    height:1000px;
+    background-color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .headerPortada{
-background-image: url(../assets/Portada2.png);  
-background-repeat: no-repeat ;
-background-size: cover;
-
-width:100% ;
-height:100%;
-text-align: center;
-display: flex;
-justify-content: center;
-align-items: center;
+    background-image: url(../assets/Portada2.png);  
+    background-repeat: no-repeat ;
+    background-size: cover;
+    width:100% ;
+    height:100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 .descripcionPortada{
-  font-size: 35px;
-  color:white;
-
-  border: 7px solid white;
-  border-radius: 20px;
- 
-  justify-content: center;
-  
+    font-size: 35px;
+    color:white;
+    border: 7px solid white;
+    border-radius: 20px;
+    justify-content: center;
+    
 }
