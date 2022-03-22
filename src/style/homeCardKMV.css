@@ -36,7 +36,8 @@
 }
 
 .box-global {
-  display: flex;
+  padding-top:  10%;
+  display: block;
   justify-content: center;
   padding-bottom: 20px;
   padding-left: 11%;

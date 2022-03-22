@@ -6,11 +6,13 @@ import Navbar from "./navbarKMV";
 import Footer from "./footer";
 import RightsKMV from "./rightsKMV.js";
 
+import Header from "./headerKMV";
 
 const RoutesKMV = () => {
     return(   
         <Router>
             <Navbar/>
+            <Header />
             <Routes>
                 <Route path="/" element={ <Home/>}/>
                 <Route path="/cart" element={ <Cart/>}/>
