@@ -1,0 +1,29 @@
+.grid-global-uno {
+    background-image: url(../assets/kmv1.png);
+    height: 400px;
+  }
+  .grid-global-dos {
+    background-color: black;
+  }
+  .grid-global-cuatro {
+    background-image: url(../assets/kmv2.png);
+    height: 400px;
+  }
+  .grid-global-tres {
+    background-color: black;
+  }
+  .informacion {
+    color: aliceblue;
+    text-align: center;
+  }
+  .nombre-colleccion {
+    color: aliceblue;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+  }
+  .box-informacion {
+    width: 500px;
+    padding-top: 60px;
+    padding-left: 120px;
+  }
+  
