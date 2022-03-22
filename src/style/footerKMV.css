@@ -3,7 +3,7 @@
 }
 .categorias {
   padding-top: 60px;
-  padding-left: 50px;
+  padding-left: 10px;
   padding-right: 50px;
   color: white;
 }
@@ -46,14 +46,15 @@
   padding-top: 20px;
 }
 .boton {
-  padding-top: 10px;
+  padding-top: 20px;
   padding-bottom: 50px;
+
   display: flex;
   justify-content: center;
 }
 .nosotros {
   padding-top: 60px;
-  padding-left: 50px;
+  padding-left: 45px;
   padding-right: 50px;
   color: white;
 }
@@ -63,14 +64,15 @@
   display: flex;
   justify-content: center;
 }
-.descripcion {
-  padding-top: 20px;
-}
+
 .apellido {
   padding-left: 5px;
 }
 .email {
-  padding-top: 10px;
+  padding-top: 22px;
+}
+.gridform {
+  padding: 0 50px 0 50px;
 }
 .global {
   display: flex;
@@ -80,13 +82,12 @@
   width: 100%;
   height: auto;
 }
-.email-classname {
-  color: aliceblue !important;
+.email-classname, .apellido-classname, .nombre-classname {
+  color: #626568  !important;
   border-radius: 5px !important;
+  background-color: white;
+  opacity: 0.8;
 }
 .nombre-classname {
-  color: aliceblue !important;
+  margin-right: 17px !important;
 }
-.apellido-classname {
-  color: aliceblue !important;
-};

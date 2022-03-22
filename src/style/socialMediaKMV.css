@@ -9,6 +9,7 @@ section {
     background-color: #000000;
     color: #c0e4e4;
     padding: 50px;
+   
 }
 
 .seguinos h3 {
@@ -23,6 +24,7 @@ section {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    margin-bottom: 15px;
 }
 
 .linkredes img {

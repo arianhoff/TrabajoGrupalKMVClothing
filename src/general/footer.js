@@ -7,6 +7,7 @@ import { TextField } from "@mui/material";
 import "../assets/home.png";
 import Chip from "@mui/material/Chip";
 
+
 export default function Footer() {
   return (
     <div className="global">
@@ -89,7 +90,7 @@ export default function Footer() {
               </Box>
             </div>
           </Grid>
-          <Grid item xs={12} sm={4}>
+          <Grid item xs={12} sm={4} className="gridform">
             <form className="contacto">
               <Box className="contact-text">Contacto</Box>
               <Box className="email">
@@ -98,7 +99,7 @@ export default function Footer() {
                   label="Email"
                   variant="outlined"
                   size="small"
-                  style={{ width: "30%" }}
+                  style={{ width: "100%" }}
                   className="email-classname"
                   InputLabelProps={{ className: "email-classname" }}
                 />
@@ -109,7 +110,7 @@ export default function Footer() {
                   label="Nombre"
                   variant="outlined"
                   size="small"
-                  style={{ width: "40%" }}
+                  style={{ width: "48%" }}
                   className="nombre-classname"
                   InputLabelProps={{ className: "nombre-classname" }}
                 />
@@ -118,13 +119,13 @@ export default function Footer() {
                   label="Apellido"
                   variant="outlined"
                   size="small"
-                  style={{ width: "40%" }}
+                  style={{ width: "48%" }}
                   className="apellido-classname"
                   InputLabelProps={{ className: "apellido-classname" }}
                 />
               </Box>
               <Box className="boton">
-                <Button href="/" variant="contained" className="boton-classname" inputlabelprops={("boton-classname")}>
+                <Button style={{ width: "65%"}} href="/" variant="contained" className="boton-classname" inputlabelprops={("boton-classname")}>
                   Enviar
                 </Button>
               </Box>
