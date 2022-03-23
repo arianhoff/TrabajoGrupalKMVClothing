@@ -11,7 +11,7 @@ const Redes = () => {
   return (
     <>
       <div className="seguinos" id="redes">
-        <h3> Seguinos en nuestras redes </h3>
+        <h3> SEGUINOS EN NUESTRAS REDES </h3>
         <div className="linkredes">
           <a href="https://www.facebook.com/" className='facebook'>
             <Facebook color='primary' fontSize='large' alt="Facebook" />

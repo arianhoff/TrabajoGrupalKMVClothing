@@ -8,33 +8,37 @@ section {
 .seguinos {
   background-image: url(../assets/Sin\ título-1.png);
   color: #c0e4e4;
-  padding: 20px;
-  background-color: #192A44;
+  padding: 10px;
+  background-color: #192a44;
 }
 
 .seguinos h3 {
   color: rgb(234, 231, 236);
   text-align: center;
-  font-size: 40px;
+  font-size: 50px;
   font: x-large;
   font-feature-settings: "vrt2";
-  font-family: 'Anton', sans-serif;
-  text-shadow: black 5px 3px;
+  font-family: "Cabin", sans-serif;
+  text-shadow: black 2px 3px 3px;
 }
 
 .linkredes {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin-bottom: 35px;
+  margin-bottom: 50px;
 }
 
-.facebook, .twitter, .instagram, .youtube, .whatsapp, .telegram {
-    margin: 5px;
+.facebook,
+.twitter,
+.instagram,
+.youtube,
+.whatsapp,
+.telegram {
+  margin: 5px;
 }
 .linkredes img {
   width: 65px;
-  margin: 15px;
   min-width: 50px;
 }
 
