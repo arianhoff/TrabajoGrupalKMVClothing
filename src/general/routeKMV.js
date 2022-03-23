@@ -7,10 +7,12 @@ import Footer from "./footer";
 import RightsKMV from "./rightsKMV.js";
 import DescripcionKMV from "./descripcionKMV";
 import Header from "./headerKMV";
+import EnviosKMV from "./enviosKMV";
 
 const RoutesKMV = () => {
     return(   
         <Router>
+            <EnviosKMV />
             <Navbar/>
             <Header />
             <DescripcionKMV />
