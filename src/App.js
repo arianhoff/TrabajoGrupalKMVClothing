@@ -1,14 +1,14 @@
 import RoutesKMV from "../src/general/routeKMV";
 import Header from './general/headerKMV';
+import Article from "./general/article";
 
 function App() {
   return (
-    <div className="App">
-      
-      <Header />
-      <RoutesKMV />
+    <div>
+			<Header />
+			<RoutesKMV />
+			<Article />
     </div>
   );
 }
-
 export default App;
