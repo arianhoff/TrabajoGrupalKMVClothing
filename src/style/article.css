@@ -14,9 +14,24 @@
 }
 
 .titleManOne {
-	padding-top: 200px;
+	padding-top: 150px;
 }
 
+.manOneBlackBox1 {
+	min-width: 100%;
+	height: 400px;
+		color: white;
+		text-align: center;
+	background-color: black;
+}
+
+.manOneBlackBox2{
+	min-width: 100%;
+	height: 400px;
+		color: white;
+		text-align: center;
+	background-color: black;
+}
 .lineaOne {
 	border-top: 2px solid white;
 	height: 3px;
@@ -40,7 +55,7 @@
 }
 
 .titleManTwo {
-	padding-top: 150px;
+	padding-top: 100px;
 }
 
 .txtManTwo {
@@ -51,7 +66,7 @@
 .lineaTwo {
 	border-top: 2px solid white;
 	height: 5px;
-	max-width: 200px;
+	max-width: 150px;
 	padding: 0;
 	margin: 10px auto 0 auto;
 }

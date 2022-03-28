@@ -25,7 +25,12 @@ function article() {
 				<Grid container>
 					<Grid item xs={12} md={6}>
 						<Item>
-							<Box className='manOne'>
+							<Box className='manOne'></Box>
+						</Item>
+					</Grid>
+					<Grid item xs={12} md={6}>
+						<Item>
+							<Box className='manOneBlackBox1'>
 								<Typography variant='h4' className='titleManOne' >NUEVA COLECCION</Typography>
 								<div className="lineaOne"></div>
 								<MyButton variant='outlined'>CATALOGO</MyButton>
@@ -34,8 +39,8 @@ function article() {
 					</Grid>
 					<Grid item xs={12} md={6}>
 						<Item>
-							<Box className='manTwo'>
-								<Typography variant='h4' className='titleManTwo'>COLECION 2012</Typography>
+							<Box className='manOneBlackBox2'>
+								<Typography variant='h5' className='titleManTwo'>COLECION 2012</Typography>
 								<div class="lineaTwo"></div>
 								<Typography className='txtManTwo'>
 									“Un hombre se debe ver como si hubiera comprado su ropa con inteligencia,
@@ -44,6 +49,11 @@ function article() {
 								</Typography>
 								<MyButton variant='outlined'>VER COLECCION</MyButton>
 							</Box>
+						</Item>
+					</Grid>
+					<Grid item xs={12} md={6}>
+						<Item>
+							<Box className='manTwo'></Box>
 						</Item>
 					</Grid>
 				</Grid>
