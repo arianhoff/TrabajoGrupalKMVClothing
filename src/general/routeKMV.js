@@ -5,8 +5,8 @@ import Cart from "./cartKMV";
 import Navbar from "./navbarKMV";
 import Footer from "./footer";
 import RightsKMV from "./rightsKMV.js";
-
 import Header from "./headerKMV";
+import Proveedor from "./Proveedor";
 
 const RoutesKMV = () => {
     return(   
@@ -17,6 +17,7 @@ const RoutesKMV = () => {
                 <Route path="/" element={ <Home/>}/>
                 <Route path="/cart" element={ <Cart/>}/>
             </Routes>
+            <Proveedor/>
             <Redes/>
             <Footer />
             <RightsKMV />
