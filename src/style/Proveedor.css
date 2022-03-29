@@ -1,0 +1,11 @@
+.holas{
+    background-color: #191b1c;
+    align-items: center;
+
+}
+.img-proveedor{
+    height:auto;
+    width:auto;
+    max-width:250px ;
+    max-height:250px;
+}
