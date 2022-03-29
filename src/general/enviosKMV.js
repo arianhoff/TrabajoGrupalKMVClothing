@@ -7,7 +7,7 @@ import CloseIcon from '@mui/icons-material/Close';
 
 export default function TransitionAlerts() {
   const [open, setOpen] = React.useState(true);
-
+  
   return (
     <Box sx={{  width: '100%' }}>
       <Collapse in={open}>

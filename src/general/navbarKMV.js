@@ -15,6 +15,7 @@ import ShoppingCartRoundedIcon from "@mui/icons-material/ShoppingCartRounded";
 import "../style/navbarKMV.css";
 import Envios from '../general/enviosKMV.js'
 
+
 const Navbar = () => {
   const [anchorEl, setAnchorEl] = useState(null);
 
@@ -42,12 +43,16 @@ const Navbar = () => {
           component="div"
         >
           {/*Logo*/}
-          <Box></Box>
+          <IconButton className="Logonav" href="./">
+          <Box className="Logonav" sx={{width:'10%'}}>
+          </Box>
+          </IconButton> 
           {/*Links*/}
           <Box sx={{ display: "flex" }}>
             <Typography
               sx={{ marginRight: "20px", cursor: "pointer", color: "white" }}
-            >
+              href="./"
+           >
               Inicio
             </Typography>
             <Typography
@@ -74,7 +79,7 @@ const Navbar = () => {
               <MenuItem onClick={handleClose}>Accesorios</MenuItem>
             </Menu>
             <Typography
-              sx={{ marginRight: "20px", cursor: "pointer", color: "white" }}
+              sx={{ marginRight: "20px", cursor: "pointer", color: "white" }}  
             >
               Ofertas
             </Typography>
@@ -82,6 +87,16 @@ const Navbar = () => {
               sx={{ marginRight: "20px", cursor: "pointer", color: "white" }}
             >
               Nosotros
+            </Typography>
+            <Typography
+              sx={{ marginRight: "20px", cursor: "pointer", color: "white" }}
+            >
+              Nosotros
+            </Typography>
+            <Typography
+              sx={{ marginRight: "20px", cursor: "pointer", color: "white" }}
+            >
+              FAQ´s
             </Typography>
           </Box>
           {/*Botón*/}

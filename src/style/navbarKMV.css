@@ -2,3 +2,9 @@
   background-color: #000000;
   color: white;
 }
+.Logonav {
+  width: 45px;
+  height: 30px;
+  background-image: url(../assets/Logonav.png);
+  background-repeat: no-repeat;
+}
