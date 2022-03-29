@@ -13,8 +13,7 @@ import PersonRoundedIcon from "@mui/icons-material/PersonRounded";
 import SearchRoundedIcon from "@mui/icons-material/SearchRounded";
 import ShoppingCartRoundedIcon from "@mui/icons-material/ShoppingCartRounded";
 import "../style/navbarKMV.css";
-import Envios from '../general/enviosKMV.js'
-
+import Envios from "../general/enviosKMV.js";
 
 const Navbar = () => {
   const [anchorEl, setAnchorEl] = useState(null);
@@ -40,19 +39,19 @@ const Navbar = () => {
             justifyContent: "space-between",
             width: "100%",
           }}
+          item xs={12} sm={4}
           component="div"
         >
           {/*Logo*/}
           <IconButton className="Logonav" href="./">
-          <Box className="Logonav" sx={{width:'10%'}}>
-          </Box>
-          </IconButton> 
+            <Box className="Logonav" sx={{ width: "10%" }}></Box>
+          </IconButton>
           {/*Links*/}
           <Box sx={{ display: "flex" }}>
             <Typography
               sx={{ marginRight: "20px", cursor: "pointer", color: "white" }}
               href="./"
-           >
+            >
               Inicio
             </Typography>
             <Typography
@@ -79,14 +78,9 @@ const Navbar = () => {
               <MenuItem onClick={handleClose}>Accesorios</MenuItem>
             </Menu>
             <Typography
-              sx={{ marginRight: "20px", cursor: "pointer", color: "white" }}  
-            >
-              Ofertas
-            </Typography>
-            <Typography
               sx={{ marginRight: "20px", cursor: "pointer", color: "white" }}
             >
-              Nosotros
+              Ofertas
             </Typography>
             <Typography
               sx={{ marginRight: "20px", cursor: "pointer", color: "white" }}
