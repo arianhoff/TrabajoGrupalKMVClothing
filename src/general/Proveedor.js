@@ -11,8 +11,8 @@ const Proveedor = () => {
     <Box className="holas" textAlign={'center'} height={'auto'} >
       <img src={sarkany} className='img-proveedor'></img>
       <br/>
-      <Button href='https://www.rickysarkany.com/' style={{margin:'100px 100px'}} color='primary' variant='contained'>
-          ¡Descubre la coleccion de otoño!
+      <Button href='https://www.rickysarkany.com/' style={{margin:'0px 100px 90px 100px'}} color='primary' variant='contained'>
+          ¡New colecction  winter 22!
       </Button>
     </Box>
   );
