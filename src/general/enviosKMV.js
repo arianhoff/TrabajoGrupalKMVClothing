@@ -1,15 +1,16 @@
-import * as React from 'react';
-import Box from '@mui/material/Box';
-import Alert from '@mui/material/Alert';
-import IconButton from '@mui/material/IconButton';
-import Collapse from '@mui/material/Collapse';
-import CloseIcon from '@mui/icons-material/Close';
+import * as React from "react";
+import Box from "@mui/material/Box";
+import Alert from "@mui/material/Alert";
+import IconButton from "@mui/material/IconButton";
+import Collapse from "@mui/material/Collapse";
+import CloseIcon from "@mui/icons-material/Close";
+
 
 export default function TransitionAlerts() {
   const [open, setOpen] = React.useState(true);
-  
+
   return (
-    <Box sx={{  width: '100%' }}>
+    <Box sx={{ width: "100%" }}>
       <Collapse in={open}>
         <Alert
           action={
@@ -24,7 +25,7 @@ export default function TransitionAlerts() {
               <CloseIcon fontSize="inherit" />
             </IconButton>
           }
-          sx={{ mb: 2 }}
+          sx={{ mb: 0 }}
         >
           Hasta 12 cuotas y envio gratis con tu compra superior a $9000!
         </Alert>

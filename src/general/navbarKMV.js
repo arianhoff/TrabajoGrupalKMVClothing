@@ -14,7 +14,6 @@ import PersonRoundedIcon from "@mui/icons-material/PersonRounded";
 import SearchRoundedIcon from "@mui/icons-material/SearchRounded";
 import ShoppingCartRoundedIcon from "@mui/icons-material/ShoppingCartRounded";
 import "../style/navbarKMV.css";
-import Envios from "../general/enviosKMV.js";
 import DrawerComponent from "./drawerComponent";
 import { useMediaQuery } from "@mui/material";
 import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
@@ -41,8 +40,8 @@ const Navbar = () => {
 
   return (
     <>
-      <AppBar elevation={1} sx={{ backgroundColor: "#0F0F0D" }}>
-        <Envios />
+      <AppBar elevation={1} sx={{ backgroundColor: "#0F0F0D" }} position="relative">
+        
         <Toolbar>
           <Box
             sx={{
