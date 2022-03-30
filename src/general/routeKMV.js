@@ -8,6 +8,7 @@ import RightsKMV from "./rightsKMV.js";
 import DescripcionKMV from "./descripcionKMV";
 import Header from "./headerKMV";
 import EnviosKMV from "./enviosKMV";
+import Carousel from "./carousel";
 
 const RoutesKMV = () => {
     return(   
@@ -20,6 +21,7 @@ const RoutesKMV = () => {
                 <Route path="/" element={ <Home/>}/>
                 <Route path="/cart" element={ <Cart/>}/>
             </Routes>
+            <Carousel />
             <Redes/>
             <Footer />
             <RightsKMV />
