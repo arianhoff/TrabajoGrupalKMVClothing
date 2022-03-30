@@ -40,7 +40,7 @@ const Navbar = () => {
 
   return (
     <>
-      <AppBar elevation={1} sx={{ backgroundColor: "#0F0F0D" }} position="relative">
+      <AppBar elevation={1} sx={{ backgroundColor: "#0F0F0D" }} position="sticky">
         
         <Toolbar>
           <Box
