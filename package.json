@@ -25,7 +25,8 @@
         "build": "react-scripts build",
         "test": "react-scripts test",
         "eject": "react-scripts eject",
-        "apifake": "json-server -w -p 5000 src/assets/db.json"
+        "apifake": "json-server -w -p 5000 src/assets/db.json",
+        "prod": "node --max_old_space_size=8192 node_modules/@angular/cli/bin/ng  build --prod"
     },
     "eslintConfig": {
         "extends": [

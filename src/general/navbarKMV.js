@@ -17,6 +17,7 @@ import "../style/navbarKMV.css";
 import DrawerComponent from "./drawerComponent";
 import { useMediaQuery } from "@mui/material";
 import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
+import Logonavbar from "../assets/Logonav.png";
 
 const Navbar = () => {
   const [anchorEl, setAnchorEl] = useState(null);
@@ -56,7 +57,9 @@ const Navbar = () => {
           >
             {/*Logo*/}
             <IconButton className="Logonav" href="./">
-              <Box className="Logonav" sx={{ width: "10%" }}></Box>
+              <Box className="Logonav" sx={{ width: "10%" }}>
+                <img src={Logonavbar} alt="Logo"></img>
+              </Box>
             </IconButton>
             {/*Links*/}
             {matches ? (
