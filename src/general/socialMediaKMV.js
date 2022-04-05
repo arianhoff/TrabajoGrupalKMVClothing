@@ -11,24 +11,24 @@ const Redes = () => {
   return (
     <>
       <div className="seguinos" id="redes">
-        <h3> SEGUINOS EN NUESTRAS REDES </h3>
+        <h3> Seguinos en nuestras redes </h3>
         <div className="linkredes">
-          <a href="https://www.facebook.com/" className='facebook'>
+          <a href="https://www.facebook.com/">
             <Facebook color='primary' fontSize='large' alt="Facebook" />
           </a>
-          <a href="https://www.instagram.com/"  className='instagram'>
+          <a href="https://www.instagram.com/">
             <Instagram color='warning' fontSize='large' alt="Instagram" />
           </a>
-          <a href="https://twitter.com/"  className='twitter'>
+          <a href="https://twitter.com/">
             <Twitter color='info' fontSize='large' alt="Twitter" />
           </a>
-          <a href="https://web.whatsapp.com/" className='whatsapp' >
+          <a href="https://web.whatsapp.com/">
             <WhatsApp color='success' fontSize='large' alt="Whatsapp" />
           </a>
-          <a href="https://web.telegram.org/k/" className='telegram'>
+          <a href="https://web.telegram.org/k/">
             <Telegram color='inherit' fontSize='large' alt="Telegram" />
           </a>
-          <a href="https://youtube.com/" className='youtube'>
+          <a href="https://youtube.com/">
             <YouTube color='error' fontSize='large' alt="YouTube" />
           </a>
         </div>
