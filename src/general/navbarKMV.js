@@ -57,7 +57,7 @@ const Navbar = () => {
           >
             {/*Logo*/}
             <IconButton className="Logonav" href="./">
-              <Box className="Logonav" sx={{ width: "10%" }}>
+              <Box className="Logonav">
                 <img src={Logonavbar} alt="Logo"></img>
               </Box>
             </IconButton>
