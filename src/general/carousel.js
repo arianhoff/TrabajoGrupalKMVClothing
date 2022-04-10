@@ -25,6 +25,13 @@ const useStyles = makeStyles((theme) => ({
         height: 550,
     },
 
+    "@media (min-width: 10px) (max-widht: 1280px)": {
+        marginTop: theme.spacing(5),
+        marginBottom: theme.spacing(5),
+        marginRight: theme.spacing(5),
+        marginLeft: theme.spacing(5)
+    },
+
     gridRoot: {
         height: '100%',
         backgroundColor: 'rgba(255,255,255,0.4)',
@@ -56,7 +63,6 @@ const useStyles = makeStyles((theme) => ({
     buttonNavigation: {
         width: '100%',
         height: '100%',
-
     },
     buttonIcon: {
         background: 'red',
@@ -163,5 +169,4 @@ function Carousel() {
 }
 
 export default Carousel
-
 
