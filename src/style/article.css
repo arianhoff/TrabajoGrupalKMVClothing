@@ -1,0 +1,72 @@
+.manOne {
+	min-width: 100%;
+	height: 400px;
+	background-image: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ), url(../manOne.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	object-fit: cover;
+	color: white;
+	text-align: center;
+}
+
+.titleManOne {
+	padding-top: 150px;
+}
+
+.manOneBlackBox1 {
+	min-width: 100%;
+	height: 400px;
+		color: white;
+		text-align: center;
+	background-color: black;
+}
+
+.manOneBlackBox2{
+	min-width: 100%;
+	height: 400px;
+		color: white;
+		text-align: center;
+	background-color: black;
+}
+.lineaOne {
+	border-top: 2px solid white;
+	height: 3px;
+	max-width: 200px;
+	padding: 0;
+	margin: 10px auto 0 auto;
+}
+
+.manTwo {
+	min-width: 100%;
+	height: 400px;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+		rgba(0, 0, 0, 0.5)),
+	url(../manTwo.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	object-fit: cover;
+	color: white;
+	text-align: center;
+}
+
+.titleManTwo {
+	padding-top: 100px;
+}
+
+.txtManTwo {
+	color: white;
+	padding: 10px 40px;
+}
+
+.lineaTwo {
+	border-top: 2px solid white;
+	height: 5px;
+	max-width: 150px;
+	padding: 0;
+	margin: 10px auto 0 auto;
+}

@@ -7,13 +7,15 @@ import Footer from "./footer";
 import RightsKMV from "./rightsKMV.js";
 import Header from "./headerKMV";
 import EnvioskKMV from "./enviosKMV";
+import Article from "./article";
 
 const RoutesKMV = () => {
     return(   
         <Router>
             <EnvioskKMV />
             <Navbar/>
-            <Header />
+				<Header />
+				<Article />
             <Routes>
                 <Route path="/" element={ <Home/>}/>
                 <Route path="/cart" element={ <Cart/>}/>
