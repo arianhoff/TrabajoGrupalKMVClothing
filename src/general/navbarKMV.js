@@ -13,7 +13,6 @@ import { Box } from "@mui/system";
 import PersonRoundedIcon from "@mui/icons-material/PersonRounded";
 import SearchRoundedIcon from "@mui/icons-material/SearchRounded";
 import ShoppingCartRoundedIcon from "@mui/icons-material/ShoppingCartRounded";
-import "../style/navbarKMV.css";
 import DrawerComponent from "./drawerComponent";
 import { useMediaQuery } from "@mui/material";
 import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
