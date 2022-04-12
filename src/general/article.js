@@ -41,7 +41,7 @@ function article() {
 						<Item>
 							<Box className='manOneBlackBox2'>
 								<Typography variant='h5' className='titleManTwo'>COLECION 2012</Typography>
-								<div class="lineaTwo"></div>
+								<div className="lineaTwo"></div>
 								<Typography className='txtManTwo'>
 									“Un hombre se debe ver como si hubiera comprado su ropa con inteligencia,
 									como si se la hubiera puesto con cuidado y después como si lo hubiera
