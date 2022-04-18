@@ -7,6 +7,7 @@ const Proveedor = () => {
     <Box className="box-principal" textAlign={"center"} height={"381px"}>
       <Button
         href="https://www.rickysarkany.com/"
+        target="_blank"
         style={{ marginTop: 250 }}
         color="primary"
         variant="contained"

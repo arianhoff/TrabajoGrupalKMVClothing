@@ -18,9 +18,9 @@
   display: block;
   width: 40%;
   color: white;
-  border: 1px solid white;
-  border-radius: 20px;
   justify-content: center;
   text-align: center;
   margin: auto;
+  margin-bottom: 5%;
+  
 }
