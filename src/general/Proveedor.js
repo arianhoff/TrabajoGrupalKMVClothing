@@ -4,7 +4,11 @@ import "../style/Proveedor.css";
 
 const Proveedor = () => {
   return (
-    <Box className="box-principal" textAlign={"center"} height={"381px"}>
+    <Box
+      className="box-principal"
+      textAlign={"center"}
+      height={"381px"}
+    >
       <Button
         href="https://www.rickysarkany.com/"
         target="_blank"

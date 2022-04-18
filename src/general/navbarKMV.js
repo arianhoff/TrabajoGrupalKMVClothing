@@ -11,13 +11,14 @@ import {
 import { Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import PersonRoundedIcon from "@mui/icons-material/PersonRounded";
-import SearchRoundedIcon from "@mui/icons-material/SearchRounded";
 import ShoppingCartRoundedIcon from "@mui/icons-material/ShoppingCartRounded";
 import "../style/navbarKMV.css";
 import DrawerComponent from "./drawerComponent";
 import { useMediaQuery } from "@mui/material";
 import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
 import Logonavbar from "../assets/Logonav.png";
+import SearchAppBar from "./buscador";
+import SearchRoundedIcon from "@mui/icons-material/SearchRounded";
 
 const Navbar = () => {
   const [anchorEl, setAnchorEl] = useState(null);
@@ -38,6 +39,8 @@ const Navbar = () => {
   const handleClose = () => {
     setAnchorEl(null);
   };
+
+  const [cambiarBuscador, setCambiarBuscador] = useState(false);
 
   return (
     <>
@@ -150,14 +153,23 @@ const Navbar = () => {
                 alignItems: "center",
               }}
             >
+              {cambiarBuscador ? (
+                <IconButton onBlur={() => setCambiarBuscador(false)}  color="inherit" sx={{ marginTop: 0 }}>
+                  <Badge>
+                    <SearchAppBar />
+                  </Badge>
+                </IconButton>
+              ) : (
+                <IconButton onClick={() => setCambiarBuscador(true)} color="inherit" sx={{ marginTop: 0 }}>
+                  <Badge>
+                    <SearchRoundedIcon />
+                  </Badge>
+                </IconButton>
+              )}
+
               <IconButton color="inherit">
                 <Badge>
                   <PersonRoundedIcon />
-                </Badge>
-              </IconButton>
-              <IconButton color="inherit">
-                <Badge>
-                  <SearchRoundedIcon />
                 </Badge>
               </IconButton>
 
