@@ -13,6 +13,7 @@ import { Box } from "@mui/system";
 import PersonRoundedIcon from "@mui/icons-material/PersonRounded";
 import SearchRoundedIcon from "@mui/icons-material/SearchRounded";
 import ShoppingCartRoundedIcon from "@mui/icons-material/ShoppingCartRounded";
+import "../style/navbarKMV.css";
 import DrawerComponent from "./drawerComponent";
 import { useMediaQuery } from "@mui/material";
 import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
@@ -40,8 +41,12 @@ const Navbar = () => {
 
   return (
     <>
-      <AppBar elevation={1} sx={{ backgroundColor: "#0F0F0D" }} position="sticky">
-        <Toolbar>
+      <AppBar
+        elevation={1}
+        sx={{ backgroundColor: "#0F0F0D" }}
+        position="sticky"
+      >
+        <Toolbar sx={{ backgroundColor: "#0F0F0D" }}>
           <Box
             sx={{
               display: "flex",
@@ -56,7 +61,7 @@ const Navbar = () => {
           >
             {/*Logo*/}
             <IconButton className="Logonav" href="./">
-              <Box className="Logonav">
+              <Box className="Logonav" sx={{ display: "flex" }}>
                 <img src={Logonavbar} alt="Logo"></img>
               </Box>
             </IconButton>
@@ -93,17 +98,19 @@ const Navbar = () => {
                 </Typography>
                 {/*Dropdown Items */}
                 <Menu
-                  id="basic-menu"
                   anchorEl={anchorEl}
                   open={openMenu}
                   onClose={handleClose}
+                  sx={{ marginTop: 0.5 }}
                 >
-                  <MenuItem onClick={handleClose}>Camperas</MenuItem>
-                  <MenuItem onClick={handleClose}>Pantalones</MenuItem>
-                  <MenuItem onClick={handleClose}>Remeras</MenuItem>
-                  <MenuItem onClick={handleClose}>Sweaters</MenuItem>
-                  <MenuItem onClick={handleClose}>Ropa Interior</MenuItem>
-                  <MenuItem onClick={handleClose}>Accesorios</MenuItem>
+                  <Box className="basic-menu">
+                    <MenuItem onClick={handleClose}>Camperas</MenuItem>
+                    <MenuItem onClick={handleClose}>Pantalones</MenuItem>
+                    <MenuItem onClick={handleClose}>Remeras</MenuItem>
+                    <MenuItem onClick={handleClose}>Sweaters</MenuItem>
+                    <MenuItem onClick={handleClose}>Ropa Interior</MenuItem>
+                    <MenuItem onClick={handleClose}>Accesorios</MenuItem>
+                  </Box>
                 </Menu>
                 <Typography
                   sx={{
@@ -137,6 +144,7 @@ const Navbar = () => {
             {/*Botón*/}
             <Box
               sx={{
+                color: "white",
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center",
