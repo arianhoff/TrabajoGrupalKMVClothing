@@ -1,11 +1,11 @@
-.holas{
-    background-color: #191b1c;
+.box-principal{
+    background-image: url(../assets/Sarkany.jpg);
+    background-repeat: no-repeat;
     align-items: center;
+    height: 381px;
+    width: 1519px;
 
 }
-.img-proveedor{
-    height:auto;
-    width:auto;
-    max-width:250px ;
-    max-height:250px;
+.boton {
+ 
 }
