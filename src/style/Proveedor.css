@@ -1,9 +1,10 @@
 .box-principal{
     background-image: url(../assets/Sarkany.jpg);
-    background-repeat: no-repeat;
-    align-items: center;
     height: 381px;
     width: 1519px;
 
 }
-
+.logo-sarkany {
+    height: 300px;
+    padding-left: 610px;
+}

@@ -99,7 +99,7 @@ export default function Footer() {
                   label="Email"
                   variant="outlined"
                   size="small"
-                  style={{ width: "100%" }}
+                  style={{ width: "95%" }}
                   className="email-classname"
                   InputLabelProps={{ className: "email-classname" }}
                 />
@@ -110,7 +110,7 @@ export default function Footer() {
                   label="Nombre"
                   variant="outlined"
                   size="small"
-                  style={{ width: "48%" }}
+                  style={{ width: "40%" }}
                   className="nombre-classname"
                   InputLabelProps={{ className: "nombre-classname" }}
                 />
@@ -119,7 +119,7 @@ export default function Footer() {
                   label="Apellido"
                   variant="outlined"
                   size="small"
-                  style={{ width: "48%" }}
+                  style={{ width: "40%" }}
                   className="apellido-classname"
                   InputLabelProps={{ className: "apellido-classname" }}
                 />
