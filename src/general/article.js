@@ -1,23 +1,28 @@
-
 import { Typography, Button, Grid, Paper, styled } from '@mui/material'
 import { Box } from '@mui/system';
-import '../style/article.css'
+import '../style/article.css';
+import { makeStyles } from '@material-ui/core';
+
+const UseStyles = makeStyles({
+	botonArticle: {
+	  backgroundColor: '#1565C0',
+	  height: 40,
+	  width: 300,
+	  color: 'white',
+	  borderRadius:5,
+	  marginTop: 15	  
+	}
+  })
 
 const Item = styled(Paper)(({ theme }) => ({
 	...theme.typography.body2,
 	textAlign: 'center',
 }));
 
-const MyButton = styled(Button)({
-	borderRadius: 3,
-	borderColor: 'white',
-	color: 'white',
-	height: 30,
-	padding: '0 10px',
-	marginTop: 20,
-});
 
 function article() {
+	
+	const classes = UseStyles()
 
 	return (
 		<>
@@ -33,7 +38,7 @@ function article() {
 							<Box className='manOneBlackBox1'>
 								<Typography variant='h4' className='titleManOne' >NUEVA COLECCION</Typography>
 								<div className="lineaOne"></div>
-								<MyButton variant='outlined'>CATALOGO</MyButton>
+								<Button className={classes.botonArticle} variant='outlined'>CATÁLOGO</Button>
 							</Box>
 						</Item>
 					</Grid>
@@ -47,7 +52,7 @@ function article() {
 									como si se la hubiera puesto con cuidado y después como si lo hubiera
 									olvidado por completo.”    Hardy Amies
 								</Typography>
-								<MyButton variant='outlined'>VER COLECCION</MyButton>
+								<Button className={classes.botonArticle} variant='outlined'>VER COLECCIÓN</Button>
 							</Box>
 						</Item>
 					</Grid>

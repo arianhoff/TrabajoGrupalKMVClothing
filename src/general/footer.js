@@ -6,9 +6,27 @@ import { Button } from "@mui/material";
 import { TextField } from "@mui/material";
 import "../assets/home.png";
 import Chip from "@mui/material/Chip";
+import { makeStyles } from "@material-ui/core";
 
+const useStyles = makeStyles({
+  boton: {
+    backgroundColor: "#1565C0",
+    height: 30,
+    width: 300,
+    color: "white",
+    borderRadius: 5,
+  },
+  categorias: {
+    backgroundColor: "#1565C0",
+    height: 30,
+    width: 100,
+    color: "white",
+    borderRadius: 15,
+  },
+});
 
-export default function Footer() {
+const Footer = () => {
+  const classes = useStyles();
   return (
     <div className="global">
       <Box sx={{ flexGrow: 1 }} className="footer-global">
@@ -25,67 +43,60 @@ export default function Footer() {
             </div>
           </Grid>
           <Grid item xs={12} sm={4}>
-            <div className="categorias">
+            <div className="categorias-div">
               <Box className="titulo-cat">Categorías</Box>
               <Box className="chips-sup">
                 <Chip
                   label="Pantalones"
                   component="a"
-                  href="/"
-                  variant="filled"
+                  variant="outlined"
                   clickable
-                  color="primary"
-                  className="pantalones"
+                  className={classes.categorias}
                   style={{ width: "40%" }}
                 />
                 <Chip
                   label="Remeras"
                   component="a"
-                  href="/"
-                  variant="filled"
+                  variant="outlined"
                   clickable
-                  color="primary"
                   style={{ width: "40%" }}
+                  className={classes.categorias}
                 />
               </Box>
               <Box className="chips-med">
                 <Chip
                   label="Zapatillas"
                   component="a"
-                  href="/"
-                  variant="filled"
+                  variant="outlined"
                   clickable
-                  color="primary"
                   style={{ width: "40%" }}
+                  className={classes.categorias}
                 />
                 <Chip
                   label="Camperas"
                   component="a"
-                  href="/"
-                  variant="filled"
+                  variant="outlined"
                   clickable
-                  color="primary"
                   style={{ width: "40%" }}
+                  className={classes.categorias}
                 />
               </Box>
               <Box className="chips-end">
                 <Chip
                   label="Accesorios"
                   component="a"
-                  href="/"
-                  variant="filled"
+                  variant="outlined"
                   clickable
-                  color="primary"
                   style={{ width: "40%" }}
+                  className={classes.categorias}
                 />
                 <Chip
                   label="Zapatos"
                   component="a"
-                  href="/"
-                  variant="filled"
+                  variant="outlined"
                   clickable
-                  color="primary"
                   style={{ width: "40%" }}
+                  className={classes.categorias}
                 />
               </Box>
             </div>
@@ -125,7 +136,12 @@ export default function Footer() {
                 />
               </Box>
               <Box className="boton">
-                <Button style={{ width: "65%"}} href="/" variant="contained" className="boton-classname" inputlabelprops={("boton-classname")}>
+                <Button
+                  className={classes.boton}
+                  href="/"
+                  variant="contained"
+                  inputlabelprops={"boton-classname"}
+                >
                   Enviar
                 </Button>
               </Box>
@@ -135,4 +151,6 @@ export default function Footer() {
       </Box>
     </div>
   );
-}
+};
+
+export default Footer;
