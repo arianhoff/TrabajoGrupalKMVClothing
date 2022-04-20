@@ -25,13 +25,6 @@ const useStyles = makeStyles((theme) => ({
         height: 550,
     },
 
-    "@media (min-width: 10px) (max-widht: 1280px)": {
-        marginTop: theme.spacing(5),
-        marginBottom: theme.spacing(5),
-        marginRight: theme.spacing(5),
-        marginLeft: theme.spacing(5)
-    },
-
     gridRoot: {
         height: '100%',
         backgroundColor: 'rgba(255,255,255,0.4)',
@@ -39,7 +32,7 @@ const useStyles = makeStyles((theme) => ({
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         position: 'relative',
-        boxShadow: '0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12)',
+        boxShadow: '0px 2px 1px -1px rgba(0,0,0,0.12),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12)',
 
 
     },
@@ -52,7 +45,7 @@ const useStyles = makeStyles((theme) => ({
     paper2: {
         '&:hover': {
             backgroundColor: 'rgba(255,255,255,0.4)',
-            'box-shadow': '0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12)',
+            'box-shadow': 'none'
 
         },
         '&:hover .MuiAvatar-root': {
@@ -92,7 +85,7 @@ const images = [
 
 function Carousel() {
     const classes = useStyles();
-   
+
     const [carouselImage, setCarouselImage] = useState({
         id: 0,
         image: images[0]
@@ -129,12 +122,14 @@ function Carousel() {
                     item xs={1}
                     container
                     direction="column"
-                    justify="center"
+                    justifyContent="center"
                     alignItems="center"
                     className={`${classes.paper} ${classes.paper2}`}
+                    padding="center"
                 >
                     <Paper className={classes.paper}>
                         <IconButton
+                            justifyContent="center"
                             aria-label="previous"
                             component="span"
                             className={classes.buttonNavigation}
@@ -149,12 +144,13 @@ function Carousel() {
                 </Grid>
                 <Grid item xs={1}
                     container
-                    justify="center"
+                    justifyContent="center"
                     alignItems="center"
                     className={`${classes.paper} ${classes.paper2}`}
                 >
                     <Paper className={classes.paper}>
                         <IconButton
+                            justifyContent='center'
                             aria-label="next"
                             component="span"
                             onClick={(e) => beforeClick(e, 0)}
