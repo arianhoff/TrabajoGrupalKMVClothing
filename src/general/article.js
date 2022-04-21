@@ -1,7 +1,7 @@
 import { Typography, Button, Grid, Paper, styled } from "@mui/material";
 import { Box } from "@mui/system";
-import "../style/article.css";
 import { makeStyles } from "@material-ui/core";
+import "../style/estiloGeneral.css";
 
 const UseStyles = makeStyles({
   botonArticle: {
