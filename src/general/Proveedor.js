@@ -12,6 +12,14 @@ const useStyles = makeStyles({
     width: 300,
     color: 'white',
     borderRadius:5,  
+  },
+  boxPrincipal: {
+    height: '381px',
+    width:'1519px'
+  },
+  logoSarkany: {
+    height:'300px',
+    paddingLeft: '610px'
   }
 })
 
@@ -22,13 +30,14 @@ const Proveedor = () => {
   return (
     <Box
       sx={{ flexGrow: 1 }}
-      className="box-principal"
+      id="box-principal"
+      className={classes.boxPrincipal}
       textAlign={"center"}
       height={"381px"}
     >
       <Grid container>
         <Grid item xs={12} sm={4}>
-          <img src={sarkany} alt="Logo" className="logo-sarkany"></img>
+          <img src={sarkany} alt="Logo" className={classes.logoSarkany}></img>
         </Grid>
         <Grid item xs={12} sm={4}>
           <Button
