@@ -9,7 +9,52 @@ import c5 from "../assets/5.png";
 import c6 from "../assets/6.png";
 import c7 from "../assets/7.png";
 import c8 from "../assets/8.png";
-import "../style/homeCardKMV.css";
+import "../style/estiloGeneral.css";
+import { makeStyles } from "@material-ui/core";
+
+
+const useStyles = makeStyles({
+  CartImagen: {
+    display: "flex",
+    justifyContent: "center",
+    width: "215px",
+    height: "214px",
+    left: "1277px",
+    top: "2608px",
+    borderRadius: "5px",
+    margin: "auto",
+  },
+  cartDiv: {
+    display: "flex",
+    borderRadius: "5px",
+    justifyContent: "center",
+    background: "#191b1c",
+    paddingBottom: "40px",
+    paddingTop: "20px",
+  },
+  cart: {
+    width: "260px",
+    height: "405px",
+    justifyContent: "center",
+    paddingBottom: "40px",
+  },
+  cartDesc: {
+    display: "block",
+    textAlign: "left",
+    color: "aliceblue",
+    paddingLeft: "10px",
+    paddingRight: "10px",
+  },
+  boxGlobal: {
+    paddingTop: "10%",
+    display: "block",
+    justifyContent: "center",
+    paddingBottom: "100px",
+    paddingLeft: "11%",
+    paddingRight: "11%",
+    backgroundColor: "#000000",
+  },
+});
 
 const CardImg = [
   {
@@ -63,27 +108,28 @@ const CardImg = [
 ];
 
 export default function ActionAreaCard() {
+  const classes = useStyles();
   return (
-      <Box sx={{ flexGrow: 1 }} className="box-global">
-        <Grid container spacing={2}>
-          {CardImg.map((element, i) => {
-            return (
-              <Grid item xs={12} sm={6} md={4} lg={3} key={element.key}>
-                <Box className="Cart">
-                  <div className="Cart-div">
-                    <div className="Cart-imagen">
-                      <img src={element.img} alt="Imagen de producto" />
-                    </div>
+    <Box sx={{ flexGrow: 1 }} className={classes.boxGlobal}>
+      <Grid container spacing={2}>
+        {CardImg.map((element, i) => {
+          return (
+            <Grid item xs={12} sm={6} md={4} lg={3} key={element.key}>
+              <Box className={classes.cart} id="Cart">
+                <div className={classes.cartDiv}>
+                  <div className={classes.CartImagen}>
+                    <img src={element.img} alt="Imagen de producto" />
                   </div>
-                  <div className="Cart-desc">
-                    <h1>{element.info}</h1>
-                    <p>{element.desc}</p>
-                  </div>
-                </Box>
-              </Grid>
-            );
-          })}
-        </Grid>
-      </Box>
+                </div>
+                <div className={classes.cartDesc}>
+                  <h1>{element.info}</h1>
+                  <p>{element.desc}</p>
+                </div>
+              </Box>
+            </Grid>
+          );
+        })}
+      </Grid>
+    </Box>
   );
 }

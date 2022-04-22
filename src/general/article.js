@@ -6,57 +6,57 @@ import "../style/estiloGeneral.css";
 const UseStyles = makeStyles({
   botonArticle: {
     backgroundColor: "#1565C0",
-    height: '40px',
-    width: '300px',
+    height: "40px",
+    width: "300px",
     color: "white",
-    borderRadius: '5px',
-    marginTop: '15px'
+    borderRadius: "5px",
+    marginTop: "15px",
   },
   manOne: {
-    minWidth: '100%',
-    height: '400px',
+    minWidth: "100%",
+    height: "400px",
     backgroundRepeat: "noRepeat",
     backgroundSize: "cover",
     backgroundPosition: "center",
     objectFit: "cover",
     color: "white",
-    textAlign: "center"
+    textAlign: "center",
   },
   titleManOne: {
-    paddingTop: '150px'
+    paddingTop: "150px",
   },
   manOneBlackBox2: {
-    minWidth: '100%',
-    height: '400px',
+    minWidth: "100%",
+    height: "400px",
     color: "white",
     textAlign: "center",
-    backgroundColor: "black"
+    backgroundColor: "black",
   },
   manTwo: {
-	minWidth: '100%',
-	height: '400px',
-	backgroundRepeat: 'no-repeat',
-	backgroundSize: 'cover',
-	backgroundPosition: 'center',
-	objectFit: 'cover',
-	color: 'white',
-	textAlign: 'center'
+    minWidth: "100%",
+    height: "400px",
+    backgroundRepeat: "no-repeat",
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    objectFit: "cover",
+    color: "white",
+    textAlign: "center",
   },
   titleManTwo: {
-	  paddingTop: '100px'
+    paddingTop: "100px",
   },
   txtManTwo: {
-	  color: 'white',
-	  padding: '10px 40px'
+    color: "white",
+    padding: "10px 40px",
   },
   lineaTwo: {
-	  borderTop: '2px solid',
-	  borderColor: 'white',
-	  height: '5px',
-	  maxWidth: '150px',
-	  padding:'0px',
-	  margin: '10px auto 0 auto'
-  }
+    borderTop: "2px solid",
+    borderColor: "white",
+    height: "5px",
+    maxWidth: "150px",
+    padding: "0px",
+    margin: "10px auto 0 auto",
+  },
 });
 
 const Item = styled(Paper)(({ theme }) => ({
