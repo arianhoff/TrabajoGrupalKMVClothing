@@ -12,7 +12,6 @@ import c8 from "../assets/8.png";
 import "../style/estiloGeneral.css";
 import { makeStyles } from "@material-ui/core";
 
-
 const useStyles = makeStyles({
   CartImagen: {
     display: "flex",
@@ -54,6 +53,17 @@ const useStyles = makeStyles({
     paddingRight: "11%",
     backgroundColor: "#000000",
   },
+  // homeBody: {
+  //   backgroundColor: "#000000",
+  //   width: "100%",
+  //   minHeight: "60vh",
+  //   display: "flex",
+  //   flexDirection: "column",
+  //   alignItems: "center",
+  //   justifyContent: "center",
+  //   fontSize: "calc(10px + 2vmin)",
+  //   color: "white",
+  // },
 });
 
 const CardImg = [

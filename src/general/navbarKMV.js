@@ -12,13 +12,33 @@ import { Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import PersonRoundedIcon from "@mui/icons-material/PersonRounded";
 import ShoppingCartRoundedIcon from "@mui/icons-material/ShoppingCartRounded";
-import "../style/navbarKMV.css";
 import DrawerComponent from "./drawerComponent";
 import { useMediaQuery } from "@mui/material";
 import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
 import Logonavbar from "../assets/Logonav.png";
 import SearchAppBar from "./buscador";
 import SearchRoundedIcon from "@mui/icons-material/SearchRounded";
+import { makeStyles } from "@material-ui/core";
+
+const useStyles = makeStyles({
+  // navbar: {
+  //   backgroundColor: '#000000',
+  //   color: 'white'
+  // },
+  logoNav: {
+    height: "30px",
+  },
+  basicMenu: {
+    display: "grid",
+    justifyItems: "left",
+    marginRight: "20px",
+    marginBottom: "5px",
+    marginTop: "5px",
+  },
+  listaCategorias: {
+    marginTop: "3px",
+  },
+});
 
 const Navbar = () => {
   const [anchorEl, setAnchorEl] = useState(null);
@@ -42,6 +62,8 @@ const Navbar = () => {
 
   const [cambiarBuscador, setCambiarBuscador] = useState(false);
 
+  const classes = useStyles();
+
   return (
     <>
       <AppBar
@@ -63,8 +85,8 @@ const Navbar = () => {
             component="div"
           >
             {/*Logo*/}
-            <IconButton className="Logonav" href="./">
-              <Box className="Logonav" sx={{ display: "flex" }}>
+            <IconButton className={classes.logoNav} href="./">
+              <Box className={classes.logoNav} sx={{ display: "flex" }}>
                 <img src={Logonavbar} alt="Logo"></img>
               </Box>
             </IconButton>
@@ -92,7 +114,7 @@ const Navbar = () => {
                     cursor: "pointer",
                     color: "white",
                   }}
-                  aria-controls="basic-menu"
+                  aria-controls={classes.basicMenu}
                   aria-haspopup="true"
                   aria-expanded={openMenu ? "true" : undefined}
                   onClick={handleClick}
@@ -106,13 +128,27 @@ const Navbar = () => {
                   onClose={handleClose}
                   sx={{ marginTop: 0.5 }}
                 >
-                  <Box className="basic-menu">
-                    <MenuItem onClick={handleClose}>Camperas</MenuItem>
-                    <MenuItem onClick={handleClose}>Pantalones</MenuItem>
-                    <MenuItem onClick={handleClose}>Remeras</MenuItem>
-                    <MenuItem onClick={handleClose}>Sweaters</MenuItem>
-                    <MenuItem onClick={handleClose}>Ropa Interior</MenuItem>
-                    <MenuItem onClick={handleClose}>Accesorios</MenuItem>
+                  <Box className={classes.basicMenu}>
+                    <ul>
+                      <li>
+                        <MenuItem onClick={handleClose}>Camperas</MenuItem>
+                      </li>
+                      <li  className={classes.listaCategorias}>
+                        <MenuItem onClick={handleClose}>Pantalones</MenuItem>
+                      </li>
+                      <li  className={classes.listaCategorias}>
+                        <MenuItem onClick={handleClose}>Remeras</MenuItem>
+                      </li>
+                      <li  className={classes.listaCategorias}>
+                        <MenuItem onClick={handleClose}>Sweaters</MenuItem>
+                      </li>
+                      <li  className={classes.listaCategorias}>
+                        <MenuItem onClick={handleClose}>Ropa Interior</MenuItem>
+                      </li>
+                      <li  className={classes.listaCategorias}>
+                        <MenuItem onClick={handleClose}>Accesorios</MenuItem>
+                      </li>
+                    </ul>
                   </Box>
                 </Menu>
                 <Typography
@@ -154,13 +190,21 @@ const Navbar = () => {
               }}
             >
               {cambiarBuscador ? (
-                <IconButton onBlur={() => setCambiarBuscador(false)}  color="inherit" sx={{ marginTop: 0 }}>
+                <IconButton
+                  onBlur={() => setCambiarBuscador(false)}
+                  color="inherit"
+                  sx={{ marginTop: 0 }}
+                >
                   <Badge>
                     <SearchAppBar />
                   </Badge>
                 </IconButton>
               ) : (
-                <IconButton onClick={() => setCambiarBuscador(true)} color="inherit" sx={{ marginTop: 0 }}>
+                <IconButton
+                  onClick={() => setCambiarBuscador(true)}
+                  color="inherit"
+                  sx={{ marginTop: 0 }}
+                >
                   <Badge>
                     <SearchRoundedIcon />
                   </Badge>

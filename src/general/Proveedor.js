@@ -1,6 +1,6 @@
 import { Box, Button, Grid } from "@mui/material";
 import React from "react";
-import "../style/Proveedor.css";
+import "../style/estiloGeneral.css";
 import sarkany from "../assets/sarkany.png";
 import { makeStyles } from "@material-ui/core";
 

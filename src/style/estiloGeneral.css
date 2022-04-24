@@ -17,4 +17,14 @@
   #Cart:hover{
     transform: scale(1.1);
   }
-  
+  /* Rights */
+  .derechos {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+/* Provedor */
+#box-principal{
+  background-image: url(../assets/Sarkany.jpg);
+}
