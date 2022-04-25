@@ -5,8 +5,7 @@ import "../style/estiloGeneral.css";
 import { makeStyles } from "@material-ui/core";
 import { Button } from "@mui/material";
 import { ProductsData } from "../cart/ProductsData";
-import { useContext } from "react/cjs/react.production.min";
-import { CartContext } from "../Cartcontent/cartContext";
+
 
 const useStyles = makeStyles({
   CartImagen: {
@@ -80,7 +79,6 @@ const useStyles = makeStyles({
 });
 
 const Products = () => {
-  const { addItemToCart } = useContext(CartContext);
   const classes = useStyles();
   return (
     <Box sx={{ flexGrow: 1 }} className={classes.boxGlobal}>
@@ -101,7 +99,7 @@ const Products = () => {
                 <div>
                   <Button
                     className={classes.botonCart}
-                    onClick={() => addItemToCart(product)}
+                    onClick={() => console.log(product)}
                   >
                     Añadir producto
                   </Button>
