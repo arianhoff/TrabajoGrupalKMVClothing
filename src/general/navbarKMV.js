@@ -216,18 +216,14 @@ const Navbar = () => {
                   <PersonRoundedIcon />
                 </Badge>
               </IconButton>
-
-              {matches ? (
                 <IconButton color="inherit" onClick={() => setOpenDrawer(true)}>
                   <MenuRoundedIcon />
                 </IconButton>
-              ) : (
                 <IconButton color="inherit">
                   <Badge badgeContent={4} color="primary">
                     <ShoppingCartRoundedIcon color="inherit" />
                   </Badge>
                 </IconButton>
-              )}
             </Box>
           </Box>
         </Toolbar>

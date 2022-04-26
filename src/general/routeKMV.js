@@ -1,7 +1,5 @@
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Home from "./homeKMV";
+import { BrowserRouter as Router } from "react-router-dom";
 import Redes from "./socialMediaKMV";
-import Cart from "./cartKMV";
 import Navbar from "./navbarKMV";
 import Footer from "./footer";
 import RightsKMV from "./rightsKMV.js";
@@ -10,6 +8,8 @@ import EnviosKMV from "./enviosKMV";
 import Article from "./article";
 import Proveedor from "./Proveedor";
 import Carousel from "./carousel";
+import { Cartprovider } from "../cart/Context/CartContext";
+import Home from "../cart/Components/Home";
 
 const RoutesKMV = () => {
   return (
@@ -18,11 +18,9 @@ const RoutesKMV = () => {
       <Navbar />
       <Header />
       <Article />
-
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/cart" element={<Cart />} />
-      </Routes>
+      <Cartprovider>
+        <Home />
+      </Cartprovider>
       <Proveedor />
       <Carousel />
       <Redes />

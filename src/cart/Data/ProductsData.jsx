@@ -1,16 +1,17 @@
-import c1 from "../assets/1.png";
-import c2 from "../assets/2.png";
-import c3 from "../assets/3.png";
-import c4 from "../assets/4.png";
-import c5 from "../assets/5.png";
-import c6 from "../assets/6.png";
-import c7 from "../assets/7.png";
-import c8 from "../assets/8.png";
+import c1 from "../assetsCart/1.png";
+import c2 from "../assetsCart/2.png";
+import c3 from "../assetsCart/3.png";
+import c4 from "../assetsCart/4.png";
+import c5 from "../assetsCart/5.png";
+import c6 from "../assetsCart/6.png";
+import c7 from "../assetsCart/7.png";
+import c8 from "../assetsCart/8.png";
 
 export const ProductsData = [
   {
     id: 1,
     price: 10,
+    amount: 0,
     img: c1,
     info: "Riñonera",
     desc: "La riñonera Isabella es nuestra favorita a la hora de necesitar manos libres con estilo.",
@@ -19,6 +20,7 @@ export const ProductsData = [
   {
     id: 2,
     price: 10,
+    amount: 0,
     img: c2,
     info: "Cinturon",
     desc: "Elegante cinturon para estar elegante y comodo todos los dias.",

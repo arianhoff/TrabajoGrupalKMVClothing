@@ -4,7 +4,10 @@ import Grid from "@mui/material/Grid";
 import "../style/estiloGeneral.css";
 import { makeStyles } from "@material-ui/core";
 import { Button } from "@mui/material";
-import { ProductsData } from "../cart/ProductsData";
+import { ProductsData } from "../cart/Data/ProductsData";
+import { useContext } from "react";
+import { CartContext } from "../cart/Context/CartContext";
+
 
 
 const useStyles = makeStyles({
@@ -44,6 +47,7 @@ const useStyles = makeStyles({
     paddingRight: "10px",
     width: "200px",
     height: "170px",
+    fontSize:'15px'
   },
   boxGlobal: {
     paddingTop: "10%",
@@ -65,21 +69,11 @@ const useStyles = makeStyles({
     borderRadius: "5px",
     marginTop: "10px",
   },
-  // homeBody: {
-  //   backgroundColor: "#000000",
-  //   width: "100%",
-  //   minHeight: "60vh",
-  //   display: "flex",
-  //   flexDirection: "column",
-  //   alignItems: "center",
-  //   justifyContent: "center",
-  //   fontSize: "calc(10px + 2vmin)",
-  //   color: "white",
-  // },
 });
 
 const Products = () => {
   const classes = useStyles();
+  const {addItemToCart} = useContext(CartContext)
   return (
     <Box sx={{ flexGrow: 1 }} className={classes.boxGlobal}>
       <Grid container spacing={2}>
@@ -89,17 +83,17 @@ const Products = () => {
               <Box className={classes.cart} id="Cart">
                 <div className={classes.cartDiv}>
                   <div className={classes.CartImagen}>
-                    <img src={product.img} alt="Imagen de producto" />
+                    <img src={product.img} alt={product.info} />
                   </div>
                 </div>
                 <div className={classes.cartDesc}>
-                  <h1>{product.info}</h1>
+                  <h2>{product.info} - ${product.price}</h2>
                   <p>{product.desc}</p>
                 </div>
                 <div>
                   <Button
                     className={classes.botonCart}
-                    onClick={() => console.log(product)}
+                    onClick={() => addItemToCart(product)}
                   >
                     Añadir producto
                   </Button>
