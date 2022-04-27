@@ -10,6 +10,7 @@ import Proveedor from "./Proveedor";
 import Carousel from "./carousel";
 import { Cartprovider } from "../cart/Context/CartContext";
 import Products from "./homeCardKMV";
+import Separador from "./separador";
 
 const RoutesKMV = () => {
   return (
@@ -18,6 +19,7 @@ const RoutesKMV = () => {
         <EnviosKMV />
         <Navbar />
         <Header />
+        <Separador />
         <Article />
         <Products />
         <Proveedor />

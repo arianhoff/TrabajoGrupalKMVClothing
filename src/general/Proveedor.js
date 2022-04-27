@@ -7,11 +7,11 @@ import { makeStyles } from "@material-ui/core";
 
 const useStyles = makeStyles({
   botonProvedor: {
-    backgroundColor: '#1565C0',
+    backgroundColor: '#1565C0 !important',
     height: 40,
     width: 300,
-    color: 'white',
-    borderRadius:5,  
+    color: 'white !important',
+    borderRadius:'5px !important',  
   },
   boxPrincipal: {
     height: '381px',

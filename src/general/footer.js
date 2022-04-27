@@ -10,24 +10,24 @@ import { makeStyles } from "@material-ui/core";
 
 const useStyles = makeStyles({
   boton: {
-    backgroundColor: "#1565C0",
+    backgroundColor: "#1565C0 !important",
     height: 30,
     width: 300,
     color: "white",
-    borderRadius: 5,
+    borderRadius: '5px !important',
   },
   categorias: {
-    backgroundColor: "#1565C0",
+    backgroundColor: "#1565C0 !important",
     height: 30,
     width: 100,
-    color: "white",
-    borderRadius: 15,
+    color: "white !important",
+    borderRadius: '15px !important',
   },
   categoriasDiv: {
     paddingTop: "60px",
     paddingLeft: "10px",
     paddingRight: "50px",
-    color: "white",
+    color: "white!important",
   },
   tituloCat: {
     fontSize: "20px",

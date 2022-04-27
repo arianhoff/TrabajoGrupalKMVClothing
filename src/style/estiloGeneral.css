@@ -3,6 +3,9 @@
   background-image: url(../assets/imagenfooter.png);
 }
 /* Article */
+.choose:hover{
+  transform: scale(1.1);
+}
 #manOne {
   background-image: url(../manOne.png);
 }
