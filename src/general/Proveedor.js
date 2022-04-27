@@ -15,7 +15,8 @@ const useStyles = makeStyles({
   },
   boxPrincipal: {
     height: '381px',
-    width:'1519px'
+    width:'1519px',
+    backgroundColor: '#0F0F0D'
   },
   logoSarkany: {
     height:'300px',

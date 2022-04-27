@@ -21,6 +21,7 @@ const RoutesKMV = () => {
         <Header />
         <Separador />
         <Article />
+        <Separador />
         <Products />
         <Proveedor />
         <Carousel />

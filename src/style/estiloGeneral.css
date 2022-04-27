@@ -22,12 +22,9 @@
 }
 /* Rights */
 .derechos {
-  background-color: black;
+  background-color: #0F0F0D;
   color: white;
   display: flex;
   justify-content: center;
 }
 /* Provedor */
-#box-principal {
-  background-image: url(../assets/Sarkany.jpg);
-}
