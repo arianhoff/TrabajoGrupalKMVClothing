@@ -18,12 +18,11 @@
   justify-content: space-between;
   width: 100%;
   height: 100%;
-  
 }
 .left {
   display: grid;
   margin-top: -11px;
-  
+  margin-left: 10px;
 }
 .buttons {
   border: none;
@@ -31,6 +30,7 @@
   font-size: 12px;
   border-radius: 5px;
   color: #222222;
+  margin-left: 10px;
 }
 .buttonOne {
   margin-right: 5px;
@@ -39,6 +39,6 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  margin-top: 27px;
-  font-size: 13px;
+  margin-top: 19px;
+  font-size: 15px;
 }

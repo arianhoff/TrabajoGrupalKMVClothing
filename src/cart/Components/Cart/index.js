@@ -6,8 +6,11 @@ import ItemCart from '../ItemCart/index';
 
 const Cart = () => {
   const [cartOpen, setCartOpen] = useState(false);
-  const [productsLength, setProductsLength] = useState(0);
+  const [productsLength, setProductsLength] = useState(() => {
+    return 0
+  });
   const { cartItems } = useContext(CartContext);
+  
 
   useEffect(() => {
     setProductsLength(
