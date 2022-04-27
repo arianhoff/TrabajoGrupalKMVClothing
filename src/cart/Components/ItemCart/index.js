@@ -9,16 +9,20 @@ const ItemCart = ({ item }) => {
     <div className="cartItem">
       <img src={item.img} alt={item.name} />
       <div className="dataContainer">
-        <div className="left">
+        <div>
+          <div className="left">
           <h3>{item.info}</h3>
+          </div>
           <div className="buttons">
-            <button onClick={() => addItemToCart(item)}>AGREGAR</button>
-            <button onClick={() => deleteItemCart(item)}>SACAR</button>
+            <button onClick={() => addItemToCart(item)} className="buttonOne">AGREGAR</button>
+            <button onClick={() => deleteItemCart(item)} className="buttonOne">SACAR</button>
           </div>
         </div>
         <div className="rigth">
-          <div>{item.amount}</div>
+          <div>Cantidad: {item.amount}</div>
+          <div>
           <p>Total: ${item.amount * item.price}</p>
+          </div>
         </div>
       </div>
     </div>

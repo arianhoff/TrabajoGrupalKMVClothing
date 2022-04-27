@@ -9,24 +9,24 @@ import Article from "./article";
 import Proveedor from "./Proveedor";
 import Carousel from "./carousel";
 import { Cartprovider } from "../cart/Context/CartContext";
-import Home from "../cart/Components/Home";
+import Products from "./homeCardKMV";
 
 const RoutesKMV = () => {
   return (
-    <Router>
-      <EnviosKMV />
-      <Navbar />
-      <Header />
-      <Article />
-      <Cartprovider>
-        <Home />
-      </Cartprovider>
-      <Proveedor />
-      <Carousel />
-      <Redes />
-      <Footer />
-      <RightsKMV />
-    </Router>
+    <Cartprovider>
+      <Router>
+        <EnviosKMV />
+        <Navbar />
+        <Header />
+        <Article />
+        <Products />
+        <Proveedor />
+        <Carousel />
+        <Redes />
+        <Footer />
+        <RightsKMV />
+      </Router>
+    </Cartprovider>
   );
 };
 

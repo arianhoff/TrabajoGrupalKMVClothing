@@ -1,6 +1,6 @@
 import React from "react";
-import Products from "../../../general/homeCardKMV";
-import Cart from "../Cart";
+import Products from "./homeCardKMV";
+import Cart from "../cart/Components/Cart";
 import { makeStyles } from "@material-ui/core";
 
 const useStyles = makeStyles({

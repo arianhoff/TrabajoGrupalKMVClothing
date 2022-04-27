@@ -1,24 +1,21 @@
 .cartContainer {
-  width: 100vw;
   height: 50px;
   display: flex;
   justify-content: flex-end;
-  font-family: Roboto;
-  margin-right: 30px;
+  font-family: Roboto; 
 }
 .buttonCartContainer {
   position: absolute;
-  margin-top: 10px;
-  margin-right: 20px;
+  margin-top: 8.5px;
+  margin-right: 26px;
   cursor: pointer;
   z-index: 2;
 }
 .buttonCartContainer svg {
   height: 25px;
-  margin-right: 2px;
+  margin-right: 4px;
 }
 .buttonCart {
-  background-color: #222222;
   width: 40px;
   height: 40px;
   display: flex;

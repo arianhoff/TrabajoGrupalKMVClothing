@@ -7,18 +7,18 @@ import {
   Menu,
   MenuItem,
   useTheme,
+  Grid,
 } from "@mui/material";
 import { Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import PersonRoundedIcon from "@mui/icons-material/PersonRounded";
-import ShoppingCartRoundedIcon from "@mui/icons-material/ShoppingCartRounded";
 import DrawerComponent from "./drawerComponent";
 import { useMediaQuery } from "@mui/material";
 import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
 import Logonavbar from "../assets/Logonav.png";
-import SearchAppBar from "./buscador";
 import SearchRoundedIcon from "@mui/icons-material/SearchRounded";
 import { makeStyles } from "@material-ui/core";
+import Cart from "../cart/Components/Cart";
 
 const useStyles = makeStyles({
   // navbar: {
@@ -59,8 +59,6 @@ const Navbar = () => {
   const handleClose = () => {
     setAnchorEl(null);
   };
-
-  const [cambiarBuscador, setCambiarBuscador] = useState(false);
 
   const classes = useStyles();
 
@@ -133,19 +131,19 @@ const Navbar = () => {
                       <li>
                         <MenuItem onClick={handleClose}>Camperas</MenuItem>
                       </li>
-                      <li  className={classes.listaCategorias}>
+                      <li className={classes.listaCategorias}>
                         <MenuItem onClick={handleClose}>Pantalones</MenuItem>
                       </li>
-                      <li  className={classes.listaCategorias}>
+                      <li className={classes.listaCategorias}>
                         <MenuItem onClick={handleClose}>Remeras</MenuItem>
                       </li>
-                      <li  className={classes.listaCategorias}>
+                      <li className={classes.listaCategorias}>
                         <MenuItem onClick={handleClose}>Sweaters</MenuItem>
                       </li>
-                      <li  className={classes.listaCategorias}>
+                      <li className={classes.listaCategorias}>
                         <MenuItem onClick={handleClose}>Ropa Interior</MenuItem>
                       </li>
-                      <li  className={classes.listaCategorias}>
+                      <li className={classes.listaCategorias}>
                         <MenuItem onClick={handleClose}>Accesorios</MenuItem>
                       </li>
                     </ul>
@@ -181,50 +179,34 @@ const Navbar = () => {
               </Box>
             )}
             {/*Botón*/}
-            <Box
+            <Grid
               sx={{
                 color: "white",
                 display: "flex",
                 justifyContent: "center",
-                alignItems: "center",
               }}
             >
-              {cambiarBuscador ? (
-                <IconButton
-                  onBlur={() => setCambiarBuscador(false)}
-                  color="inherit"
-                  sx={{ marginTop: 0 }}
-                >
-                  <Badge>
-                    <SearchAppBar />
-                  </Badge>
-                </IconButton>
-              ) : (
-                <IconButton
-                  onClick={() => setCambiarBuscador(true)}
-                  color="inherit"
-                  sx={{ marginTop: 0 }}
-                >
-                  <Badge>
-                    <SearchRoundedIcon />
-                  </Badge>
-                </IconButton>
-              )}
+              <IconButton color="inherit" sx={{ marginTop: 0 }}>
+                <Badge>
+                  <SearchRoundedIcon />
+                </Badge>
+              </IconButton>
 
               <IconButton color="inherit">
                 <Badge>
                   <PersonRoundedIcon />
                 </Badge>
               </IconButton>
+              {matches ? (
                 <IconButton color="inherit" onClick={() => setOpenDrawer(true)}>
                   <MenuRoundedIcon />
                 </IconButton>
-                <IconButton color="inherit">
-                  <Badge badgeContent={4} color="primary">
-                    <ShoppingCartRoundedIcon color="inherit" />
-                  </Badge>
-                </IconButton>
-            </Box>
+              ) : (
+                <Box sx={{marginLeft: 8.5, marginBottom: 1}}>
+                  <Cart />
+                </Box>
+              )}
+            </Grid>
           </Box>
         </Toolbar>
       </AppBar>
