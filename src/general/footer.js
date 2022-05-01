@@ -90,8 +90,11 @@ const useStyles = makeStyles({
     paddingLeft: "5px",
   },
   global: {
+    width:'100%',
     display: "flex",
     justifyContent: "center",
+    margin: 0,
+    padding: 0
   },
   gridForm: {
     padding: "0px 50px 0px 50px",

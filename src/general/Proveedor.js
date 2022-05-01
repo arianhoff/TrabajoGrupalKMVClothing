@@ -15,7 +15,7 @@ const useStyles = makeStyles({
   },
   boxPrincipal: {
     height: '381px',
-    width:'1519px',
+    width:'100%',
     backgroundColor: '#0F0F0D'
   },
   logoSarkany: {
@@ -31,7 +31,6 @@ const Proveedor = () => {
   return (
     <Box
       sx={{ flexGrow: 1 }}
-      id="box-principal"
       className={classes.boxPrincipal}
       textAlign={"center"}
       height={"381px"}
