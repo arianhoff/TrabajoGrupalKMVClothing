@@ -12,7 +12,7 @@ const useStyles = makeStyles({
   boton: {
     backgroundColor: "#1565C0 !important",
     height: 30,
-    width: 300,
+    width: 260,
     color: "white",
     borderRadius: '5px !important',
   },
@@ -27,7 +27,7 @@ const useStyles = makeStyles({
     paddingTop: "60px",
     paddingLeft: "10px",
     paddingRight: "50px",
-    color: "white!important",
+    color: "white !important",
   },
   tituloCat: {
     fontSize: "20px",
@@ -57,20 +57,20 @@ const useStyles = makeStyles({
   },
   contactText: {
     fontSize: "20px",
-    paddingRight: "5px",
+    marginRight:'23px',
     fontFamily: "Roboto, sans-serif",
     display: "flex",
     justifyContent: "center",
   },
   botonTexto: {
     paddingTop: "20px",
-    paddingLeft: "50px",
+    paddingLeft: "52px",
   },
   botonGeneral: {
     paddingTop: "20px",
     paddingBottom: "50px",
     display: "flex",
-    justifyContent: "center",
+    marginLeft: '57px'
   },
   nosotros: {
     paddingTop: "60px",
@@ -90,11 +90,9 @@ const useStyles = makeStyles({
     paddingLeft: "5px",
   },
   global: {
-    width:'100%',
+    width:'auto',
     display: "flex",
     justifyContent: "center",
-    margin: 0,
-    padding: 0
   },
   gridForm: {
     padding: "0px 50px 0px 50px",
@@ -112,7 +110,7 @@ const Footer = () => {
   return (
     <div className={classes.global}>
       <Box sx={{ flexGrow: 1 }} className="footer-global">
-        <Grid container spacing={2}>
+        <Grid container>
           <Grid item xs={12} sm={4}>
             <div className={classes.nosotros}>
               <Box className={classes.sobreText}>Sobre Nosotros</Box>
@@ -191,7 +189,7 @@ const Footer = () => {
                   label="Email"
                   size="small"
                   variant="filled"
-                  style={{ width: "90%", marginLeft:'5px' }}
+                  style={{ width: "90%"}}
                   className={classes.emailGlobal}
                 />
               </Box>
@@ -200,7 +198,7 @@ const Footer = () => {
                   label="Nombre"
                   size="small"
                   variant="filled"
-                  style={{ width: "40%", marginLeft:'5px' }}
+                  style={{ width: "40%", marginLeft: '-15px' }}
                   className={classes.emailGlobal}
                 />
                 <TextField

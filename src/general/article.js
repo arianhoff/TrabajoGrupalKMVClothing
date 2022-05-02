@@ -101,19 +101,24 @@ const UseStyles = makeStyles({
     alignItems: "center",
     padding: "6% 0% 25% 11%",
     height: "40px",
+    width:'1531px'
   },
   chooseImagen: {
     display: "flex",
     width: "50px",
     height: "50px",
     borderRadius: "5px",
-    marginLeft:'75px'
+    marginLeft: "75px",
   },
   chooseDes: {
-    display: 'block',
-    textAlign: 'center',
-    color: 'aliceblue',
-  }
+    display: "block",
+    textAlign: "center",
+    color: "aliceblue",
+  },
+  boxGlobal: {
+    margin: 0,
+    padding: 0,
+  },
 });
 
 const Item = styled(Paper)(({ theme }) => ({
@@ -126,7 +131,7 @@ function article() {
 
   return (
     <>
-      <Box sx={{ flexGrow: 1 }}>
+      <Box sx={{ flexGrow: 1 }} className={classes.boxGlobal}>
         <Grid container>
           <Grid item xs={12} md={6}>
             <Item>
@@ -150,17 +155,15 @@ function article() {
             {Chose.map((element, i) => {
               return (
                 <Grid item xs={12} sm={6} md={4} lg={2} key={element.key}>
-                  <Box className="choose">
-                    <div className="choose-div">
-                      <div className={classes.chooseImagen}>
-                        <img src={element.img} alt="Imagen de producto" />
-                      </div>
+                  <div className="choose-div">
+                    <div className={classes.chooseImagen}>
+                      <img src={element.img} alt="Imagen de producto" />
                     </div>
-                    <div className={classes.chooseDes}>
-                      <h1>{element.info}</h1>
-                      <p>{element.desc}</p>
-                    </div>
-                  </Box>
+                  </div>
+                  <div className={classes.chooseDes}>
+                    <h1>{element.info}</h1>
+                    <p>{element.desc}</p>
+                  </div>
                 </Grid>
               );
             })}
