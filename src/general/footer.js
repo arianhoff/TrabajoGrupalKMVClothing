@@ -74,7 +74,7 @@ const useStyles = makeStyles({
   },
   nosotros: {
     paddingTop: "60px",
-    paddingLeft: "45px",
+    paddingLeft: "60px",
     paddingRight: "50px",
     color: "white",
   },
