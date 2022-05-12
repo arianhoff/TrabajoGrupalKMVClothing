@@ -12,7 +12,7 @@ const Chose = [
     {
       img: c1,
       info: "Somos EcoFriendly",
-      desc: "Producimos todos nuestros nuestros productos con materia prima sintetica.",
+      desc: "Todos nuestros nuestros productos son hechos con materia prima sintética.",
       key: c1,
     },
     {
@@ -47,7 +47,9 @@ const Chose = [
         backgroundColor: "#0F0F0D",
         padding: "8% 11% 25% 11%",
         height: "40px",
-        justifyContent: 'space-around'
+        width: '100%',
+        justifyContent: 'space-around',
+        fontFamily: "Roboto, sans-serif",
       },
       chooseImagen: {
         width: "50px",
@@ -66,7 +68,7 @@ const Chose = [
 const ventajasKMV = () => {
     const classes = UseStyles();
   return (
-    <Grid container  className={classes.choseGlobal}>
+    <Grid container item xs={12} className={classes.choseGlobal}>
             {Chose.map((element, i) => {
               return (
                 <Grid item xs={12} sm={6} md={4} lg={2} key={element.key} className={classes.choseGrid} id='choose'>

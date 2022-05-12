@@ -9,6 +9,7 @@ section {
   background-color: #0F0F0D;
   color: #c0e4e4;
   padding: 60px;
+  
  
 }
 
@@ -16,8 +17,8 @@ section {
   color: rgb(234, 231, 236);
   text-align: center;
   font-size: 30px;
-  font: x-large;
-  font-feature-settings: "vrt2";
+  font: "Roboto, sans-serif";
+  font-weight: bold;
 }
 
 .linkredes {

@@ -45,10 +45,13 @@ const UseStyles = makeStyles({
   },
   titleManTwo: {
     paddingTop: "100px",
+    fontFamily: 'Roboto, sans-serif',
+    fontSize: '25px'
   },
   txtManTwo: {
     color: "white",
     padding: "10px 40px",
+    
   },
   lineaTwo: {
     borderTop: "2px solid",
@@ -85,7 +88,7 @@ function article() {
             <Item>
               <Box className={classes.manOneBlackBox2}>
                 <Typography variant="h5" className={classes.titleManOne}>
-                  NUEVA COLECCION
+                  <b>NUEVA COLECCION</b>
                 </Typography>
                 <div className={classes.lineaTwo}></div>
                 <Button className={classes.botonArticle} variant="outlined">
@@ -99,7 +102,7 @@ function article() {
             <Item>
               <Box className={classes.manOneBlackBox2}>
                 <Typography variant="h5" className={classes.titleManTwo}>
-                  COLECION 2012
+                  <b>COLECION 2012</b>
                 </Typography>
                 <div className={classes.lineaTwo}></div>
                 <Typography className={classes.txtManTwo}>

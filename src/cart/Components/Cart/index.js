@@ -72,7 +72,7 @@ const Cart = () => {
 
       {cartItems && cartOpen && (
         <div className='cart'>
-          <h2>Tu carrito</h2>
+          <h2>TU CARRITO</h2>
 
           {cartItems.length === 0 ? (
             <p className='cartVacio'>Tu carrito esta vacio</p>

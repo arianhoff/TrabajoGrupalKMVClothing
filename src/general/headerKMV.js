@@ -22,12 +22,14 @@ const useStyles = makeStyles({
   },
   descripcionPortada: {
     display: "block",
-    width: "40%",
+    width: "45%",
     color: "white",
     justifyContent: "center",
     textAlign: "center",
     margin: "auto",
     marginBottom: "5%",
+    fontSize: "19px",
+    fontFamily: "Roboto, sans-serif",
   },
 });
 
@@ -41,10 +43,11 @@ const Header = () => {
       <Box className={classes.descripcionPortada}>
         <p>
           {" "}
-          Krueger, Myers and Voorhees Clothing Co. <br />
-          KMV es una casa de modas Argentina, fundada en Buenos Aires, en 2003.{" "}
-          <br />
-          La marca se especializa en diseñar y confeccionar artículos de lujo.{" "}
+          <b>Krueger, Myers and Voorhees Clothing Co.</b> <br />
+          KMV fue fundada en Buenos Aires en el 2003 como una empresa de modas
+          para hombres, creando artículos de lujo. Actualmente llevamos la moda
+          al alcance de todos los hombres con un gusto por el buen vestir y la
+          calidad.{" "}
         </p>
       </Box>
     </div>

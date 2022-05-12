@@ -14,14 +14,16 @@ const useStyles = makeStyles({
     height: 30,
     width: 260,
     color: "white",
-    borderRadius: '5px !important',
+    borderRadius: "5px !important",
+    fontFamily: "Roboto, sans-serif",
+    fontWeight: "bolder",
   },
   categorias: {
     backgroundColor: "#1565C0 !important",
     height: 30,
     width: 100,
     color: "white !important",
-    borderRadius: '15px !important',
+    borderRadius: "15px !important",
   },
   categoriasDiv: {
     paddingTop: "60px",
@@ -32,6 +34,7 @@ const useStyles = makeStyles({
   tituloCat: {
     fontSize: "20px",
     fontFamily: "Roboto, sans-serif",
+    fontWeight: "bold",
     display: "flex",
     justifyContent: "center",
   },
@@ -57,8 +60,9 @@ const useStyles = makeStyles({
   },
   contactText: {
     fontSize: "20px",
-    marginRight:'23px',
+    marginRight: "23px",
     fontFamily: "Roboto, sans-serif",
+    fontWeight: "bold",
     display: "flex",
     justifyContent: "center",
   },
@@ -70,7 +74,7 @@ const useStyles = makeStyles({
     paddingTop: "20px",
     paddingBottom: "50px",
     display: "flex",
-    marginLeft: '57px'
+    marginLeft: "57px",
   },
   nosotros: {
     paddingTop: "60px",
@@ -81,6 +85,7 @@ const useStyles = makeStyles({
   sobreText: {
     fontSize: "20px",
     fontFamily: "Roboto, sans-serif",
+    fontWeight: "bold",
     display: "flex",
     justifyContent: "center",
     marginTop: "3px",
@@ -90,7 +95,7 @@ const useStyles = makeStyles({
     paddingLeft: "5px",
   },
   global: {
-    width:'auto',
+    width: "auto",
     display: "flex",
     justifyContent: "center",
   },
@@ -101,7 +106,7 @@ const useStyles = makeStyles({
     color: "626568",
     borderRadius: "5px",
     backgroundColor: "white",
-    opacity: "0.8"
+    opacity: "0.8",
   },
 });
 
@@ -115,10 +120,14 @@ const Footer = () => {
             <div className={classes.nosotros}>
               <Box className={classes.sobreText}>Sobre Nosotros</Box>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
-                corporis expedita veritatis, eius praesentium, neque
-                exercitationem voluptatem maiores debitis aspernatur sed qui rem
-                illo? Velit cum aliquam aut pariatur quibusdam!
+                KMV Clothing Co. nació en Agosto del 2003 como un proyecto de un
+                grupo de amigos, que buscaban elegancia y comodidad, con
+                productos de vanguardia trayendo la moda europea al País, con
+                productos y costos nacionales. Hoy casi 20 años después de su
+                nacimiento, la marca está instalada como líder en el segmento
+                e-commerce de ropa masculina, vendiendo a clientes de todo el
+                País. Además cuenta con presencia en varias tiendas multimarca
+                en los principales Shoppings.
               </p>
             </div>
           </Grid>
@@ -189,7 +198,7 @@ const Footer = () => {
                   label="Email"
                   size="small"
                   variant="filled"
-                  style={{ width: "90%"}}
+                  style={{ width: "90%" }}
                   className={classes.emailGlobal}
                 />
               </Box>
@@ -198,14 +207,14 @@ const Footer = () => {
                   label="Nombre"
                   size="small"
                   variant="filled"
-                  style={{ width: "40%", marginLeft: '-15px' }}
+                  style={{ width: "40%", marginLeft: "-15px" }}
                   className={classes.emailGlobal}
                 />
                 <TextField
                   label="Apellido"
                   size="small"
                   variant="filled"
-                  style={{ width: "40%", marginLeft: '17px' }}
+                  style={{ width: "40%", marginLeft: "17px" }}
                   className={classes.emailGlobal}
                 />
               </Box>
