@@ -3,7 +3,7 @@ import React from "react";
 import "../style/estiloGeneral.css";
 import sarkany from "../assets/sarkany.png";
 import { makeStyles } from "@material-ui/core";
-import { display, flexbox } from "@mui/system";
+
 
 const useStyles = makeStyles({
   butonProvedor: {
