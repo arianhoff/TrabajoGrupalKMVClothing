@@ -210,7 +210,7 @@ const Footer = () => {
                   label="Nombre"
                   size="small"
                   variant="filled"
-                  style={{ width: "40%", marginLeft: "-15px" }}
+                  style={{ width: "40%", marginLeft: "-6px" }}
                   className={classes.emailGlobal}
                 />
                 <TextField

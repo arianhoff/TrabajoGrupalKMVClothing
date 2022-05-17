@@ -6,7 +6,7 @@ import RightsKMV from "./rightsKMV.js";
 import Header from "./headerKMV";
 import EnviosKMV from "./enviosKMV";
 import Article from "./article";
-import Proveedor from "./proveedor";
+import Proveedor from "./Proveedor";
 import Carousel from "./carousel";
 import { Cartprovider } from "../cart/Context/CartContext";
 import Products from "./homeCardKMV";
