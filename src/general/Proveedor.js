@@ -14,7 +14,7 @@ const useStyles = makeStyles({
     borderRadius: "5px !important",
     fontWeight: "bold",
     marginTop: '230px !important',
-    marginRight: '45px !important'
+    marginRight: '20px !important'
   },
   boxPrincipal: {
     height: "381px !important",

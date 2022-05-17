@@ -54,7 +54,7 @@ const useStyles = makeStyles({
     display: "block",
     justifyContent: "center",
     paddingBottom: "100px",
-    paddingLeft: "17%",
+    paddingLeft: "11%",
     paddingRight: "11%",
     backgroundColor: "#000000",
   },
@@ -76,7 +76,7 @@ const Products = () => {
   const classes = useStyles();
   const {addItemToCart} = useContext(CartContext)
   return (
-    <Box sx={{ flexGrow: 1 }} className={classes.boxGlobal}>
+    <Box sx={{ flexGrow: 1 }} className={classes.boxGlobal} id="boxScreen">
       <Grid container spacing={3}>
         {ProductsData.map((product, i) => {
           return (

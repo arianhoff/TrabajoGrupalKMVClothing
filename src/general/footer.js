@@ -129,8 +129,7 @@ const Footer = () => {
                 productos y costos nacionales. Hoy casi 20 años después de su
                 nacimiento, la marca está instalada como líder en el segmento
                 e-commerce de ropa masculina, vendiendo a clientes de todo el
-                País. Además cuenta con presencia en varias tiendas multimarca
-                en los principales Shoppings.
+                País.
               </p>
             </div>
           </Grid>
@@ -210,7 +209,7 @@ const Footer = () => {
                   label="Nombre"
                   size="small"
                   variant="filled"
-                  style={{ width: "40%", marginLeft: "-6px" }}
+                  style={{ width: "40%", marginLeft: "-7px" }}
                   className={classes.emailGlobal}
                 />
                 <TextField

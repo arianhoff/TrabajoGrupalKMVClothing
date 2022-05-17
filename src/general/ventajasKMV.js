@@ -45,7 +45,7 @@ const UseStyles = makeStyles({
 	choseGlobal: {
 		display: "flex",
 		backgroundColor: "#0F0F0D",
-		padding: "100px 85px 60px 85px",
+		padding: "130px 95px 110px 85px",
 		/* padding: "8% 11% 25% 11%", */
 		width: '100px',
 		/* height:"40px", */
@@ -69,12 +69,12 @@ const UseStyles = makeStyles({
 const ventajasKMV = () => {
 	const classes = UseStyles();
 	return (
-		<Grid container item xs={12} className={classes.choseGlobal}>
+		<Grid container item xs={12} className={classes.choseGlobal} id="Global">
 			{Chose.map((element, i) => {
 				return (
 					<Grid item xs={12} sm={6} md={4} lg={2} key={element.key} className={classes.choseGrid} id='choose'>
 						<div>
-							<div className={classes.chooseImagen}>
+							<div className={classes.chooseImagen} id="imagen">
 								<img src={element.img} alt="Imagen de producto" />
 							</div>
 						</div>
