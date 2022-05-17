@@ -45,8 +45,10 @@ const UseStyles = makeStyles({
 	choseGlobal: {
 		display: "flex",
 		backgroundColor: "#0F0F0D",
-		padding: "60px 30px 30px 30px",
+		padding: "100px 85px 60px 85px",
+		/* padding: "8% 11% 25% 11%", */
 		width: '100px',
+		/* height:"40px", */
 		justifyContent: 'space-around',
 		fontFamily: "Roboto, sans-serif",
 	},
@@ -54,7 +56,7 @@ const UseStyles = makeStyles({
 		width: "50px",
 		height: "50px",
 		borderRadius: "5px",
-		marginLeft: "75px",
+		marginLeft: "90px",
 	},
 	chooseDes: {
 		display: "block",
