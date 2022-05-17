@@ -3,6 +3,7 @@ import React from "react";
 import "../style/estiloGeneral.css";
 import sarkany from "../assets/sarkany.png";
 import { makeStyles } from "@material-ui/core";
+import { display, flexbox } from "@mui/system";
 
 
 const useStyles = makeStyles({
@@ -11,44 +12,28 @@ const useStyles = makeStyles({
     height: 40,
     width: 300,
     color: 'white !important',
-    borderRadius:'5px !important',  
+		borderRadius: '5px !important',
+		marginBottom: '35px !important',
   },
-  boxPrincipal: {
-    height: '381px',
+	boxPrincipal: {
     width:'100%',
-    backgroundColor: '#0F0F0D'
+		backgroundColor: '#0F0F0D',
   },
-  logoSarkany: {
-    height:'300px',
-    paddingLeft: '610px'
-  }
+	logoSarkany: {
+		height: '300px',
+	},
 })
 
 const Proveedor = () => {
-
-  const classes = useStyles()
-  
+const classes = useStyles()
   return (
-    <Box
-      sx={{ flexGrow: 1 }}
-      className={classes.boxPrincipal}
-      textAlign={"center"}
-      height={"381px"}
-    >
-      <Grid container>
-        <Grid item xs={12} sm={4}>
+    <Box sx={{ flexGrow: 1 }} className={classes.boxPrincipal} textAlign={"center"}>
+			<Grid container className={classes.containerSarkany}>
+        <Grid item xs={12} sm={12}>
           <img src={sarkany} alt="Logo" className={classes.logoSarkany}></img>
         </Grid>
-        <Grid item xs={12} sm={4}>
-          <Button
-            href="https://www.rickysarkany.com/"
-            target="_blank"
-            style={{ marginTop: 230 }}
-            variant="outlined"
-            className={classes.botonProvedor}
-          >
-            ¡Nueva colección invierno 2022!
-          </Button>
+        <Grid item xs={12} sm={12}>
+					<Button href="https://www.rickysarkany.com/" target="_blank" variant="outlined" className={classes.botonProvedor}>¡Nueva colección invierno 2022!</Button>
         </Grid>
       </Grid>
     </Box>

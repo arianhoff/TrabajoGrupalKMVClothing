@@ -1,11 +1,12 @@
 import React from "react";
 import "../style/estiloGeneral.css";
+import {Box} from "@mui/system"
 
 const rightsKMV = () => {
   return (
-    <div className="derechos">
+    <Box className="derechos">
       <p> KMV Clothing © 2022 - Todos los Derechos Reservados</p>
-    </div>
+    </Box>
   );
 };
 

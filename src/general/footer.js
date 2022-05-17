@@ -7,6 +7,7 @@ import { TextField } from "@mui/material";
 import "../assets/home.png";
 import Chip from "@mui/material/Chip";
 import { makeStyles } from "@material-ui/core";
+import { Margin } from "@mui/icons-material";
 
 const useStyles = makeStyles({
   boton: {
@@ -25,8 +26,8 @@ const useStyles = makeStyles({
   },
   categoriasDiv: {
     paddingTop: "60px",
-    paddingLeft: "10px",
-    paddingRight: "50px",
+    paddingLeft: "30px",
+    paddingRight: "30px",
     color: "white !important",
   },
   tituloCat: {
@@ -64,13 +65,14 @@ const useStyles = makeStyles({
   },
   botonTexto: {
     paddingTop: "20px",
-    paddingLeft: "52px",
+    paddingLeft: "20px",
   },
   botonGeneral: {
     paddingTop: "20px",
     paddingBottom: "50px",
     display: "flex",
-    marginLeft: '57px'
+    // marginLeft: '10px'
+		justifyContent: "center",
   },
   nosotros: {
     paddingTop: "60px",
@@ -82,12 +84,13 @@ const useStyles = makeStyles({
     fontSize: "20px",
     fontFamily: "Roboto, sans-serif",
     display: "flex",
-    justifyContent: "center",
+		justifyContent: "center",
+		textAlign: "center",
     marginTop: "3px",
   },
   email: {
-    paddingTop: "22px",
-    paddingLeft: "5px",
+    paddingTop: "20px",
+    paddingLeft: "20px",
   },
   global: {
     width:'auto',
@@ -101,7 +104,7 @@ const useStyles = makeStyles({
     color: "626568",
     borderRadius: "5px",
     backgroundColor: "white",
-    opacity: "0.8"
+		opacity: "0.8",
   },
 });
 
@@ -198,14 +201,14 @@ const Footer = () => {
                   label="Nombre"
                   size="small"
                   variant="filled"
-                  style={{ width: "40%", marginLeft: '-15px' }}
+                  style={{ width: "43%", marginLeft: '8px' }}
                   className={classes.emailGlobal}
                 />
                 <TextField
                   label="Apellido"
                   size="small"
                   variant="filled"
-                  style={{ width: "40%", marginLeft: '17px' }}
+                  style={{ width: "40%", marginLeft: '5px' }}
                   className={classes.emailGlobal}
                 />
               </Box>
@@ -214,7 +217,7 @@ const Footer = () => {
                   className={classes.boton}
                   href="/"
                   variant="contained"
-                  inputlabelprops={"boton-classname"}
+									inputlabelprops={"boton-classname"} style={{ width: "40%" }}
                 >
                   Enviar
                 </Button>

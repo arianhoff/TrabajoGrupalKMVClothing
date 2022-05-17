@@ -17,7 +17,7 @@ const RoutesKMV = () => {
     <Cartprovider>
       <Router>
         <EnviosKMV />
-        <Navbar />
+        {/* <Navbar /> */}
         <Header />
         <Separador />
         <Article />
