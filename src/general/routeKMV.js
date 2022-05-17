@@ -1,4 +1,4 @@
-import { BrowserRouter as Router } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Redes from "./socialMediaKMV";
 import Navbar from "./navbarKMV";
 import Footer from "./footer";
@@ -12,10 +12,11 @@ import { Cartprovider } from "../cart/Context/CartContext";
 import Products from "./homeCardKMV";
 import Separador from "./separador";
 
+
 const RoutesKMV = () => {
   return (
     <Cartprovider>
-      <Router>
+      <Router> 
         <EnviosKMV />
         <Navbar />
         <Header />
