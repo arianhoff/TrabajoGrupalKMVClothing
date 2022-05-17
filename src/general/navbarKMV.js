@@ -21,10 +21,6 @@ import { makeStyles } from "@material-ui/core";
 import Cart from "../cart/Components/Cart";
 
 const useStyles = makeStyles({
-  // navbar: {
-  //   backgroundColor: '#000000',
-  //   color: 'white'
-  // },
   logoNav: {
     height: "30px",
   },
@@ -101,6 +97,7 @@ const Navbar = () => {
                     marginRight: "20px",
                     cursor: "pointer",
                     color: "white",
+                    fontWeight: 'bold'
                   }}
                   href="./"
                 >
@@ -111,6 +108,7 @@ const Navbar = () => {
                     marginRight: "20px",
                     cursor: "pointer",
                     color: "white",
+                    fontWeight: 'bold'
                   }}
                   aria-controls={classes.basicMenu}
                   aria-haspopup="true"
@@ -154,6 +152,7 @@ const Navbar = () => {
                     marginRight: "20px",
                     cursor: "pointer",
                     color: "white",
+                    fontWeight: 'bold'
                   }}
                 >
                   Ofertas
@@ -163,6 +162,7 @@ const Navbar = () => {
                     marginRight: "20px",
                     cursor: "pointer",
                     color: "white",
+                    fontWeight: 'bold'
                   }}
                 >
                   Nosotros
@@ -172,6 +172,7 @@ const Navbar = () => {
                     marginRight: "20px",
                     cursor: "pointer",
                     color: "white",
+                    fontWeight: 'bold'
                   }}
                 >
                   FAQ´s

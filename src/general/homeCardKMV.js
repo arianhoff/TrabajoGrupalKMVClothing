@@ -50,7 +50,7 @@ const useStyles = makeStyles({
     fontSize:'15px'
   },
   boxGlobal: {
-    paddingTop: "10%",
+    paddingTop: "100px",
     display: "block",
     justifyContent: "center",
     paddingBottom: "100px",
@@ -68,6 +68,7 @@ const useStyles = makeStyles({
     height: "30px",
     borderRadius: "5px",
     marginTop: "10px",
+    fontWeight: 'bold'
   },
 });
 

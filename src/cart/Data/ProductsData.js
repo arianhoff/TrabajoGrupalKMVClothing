@@ -10,7 +10,7 @@ import c8 from "../assetsCart/8.png";
 export const ProductsData = [
   {
     id: 1,
-    price: 10,
+    price: 3500,
     amount: 0,
     img: c1,
     info: "Riñonera",
@@ -19,16 +19,16 @@ export const ProductsData = [
   },
   {
     id: 2,
-    price: 10,
+    price: 1700,
     amount: 0,
     img: c2,
-    info: "Cinturon",
-    desc: "Elegante cinturon para estar elegante y comodo todos los dias.",
+    info: "Cinturón",
+    desc: "Sofisticado cinturón para estar elegante todo el día.",
     key: c2,
   },
   {
     id: 3,
-    price: 10,
+    price: 2900,
     amount: 0,
     img: c3,
     info: "Gorra",
@@ -37,7 +37,7 @@ export const ProductsData = [
   },
   {
     id: 4,
-    price: 10,
+    price: 4800,
     amount: 0,
     img: c4,
     info: "Mochila",
@@ -46,7 +46,7 @@ export const ProductsData = [
   },
   {
     id: 5,
-    price: 10,
+    price: 4300,
     amount: 0,
     img: c5,
     info: "Bolso",
@@ -55,7 +55,7 @@ export const ProductsData = [
   },
   {
     id: 6,
-    price: 10,
+    price: 12300,
     amount: 0,
     img: c6,
     info: "Bota",
@@ -64,7 +64,7 @@ export const ProductsData = [
   },
   {
     id: 7,
-    price: 10,
+    price: 17000,
     amount: 0,
     img: c7,
     info: "Borcego",
@@ -73,7 +73,7 @@ export const ProductsData = [
   },
   {
     id: 8,
-    price: 10,
+    price: 11500,
     amount: 0,
     img: c8,
     info: "Zapato",
