@@ -3,7 +3,7 @@
   background-image: url(../assets/imagenfooter.png);
 }
 /* Article */
-#choose:hover{
+#choose:hover {
   transform: scale(1.1);
 }
 #manOne {
@@ -22,8 +22,26 @@
 }
 /* Rights */
 .derechos {
-  background-color: #0F0F0D;
+  background-color: #0f0f0d;
   color: white;
   display: flex;
   justify-content: center;
+  padding: 0 25px 0 25px;
 }
+
+@media screen and (max-width: 480px) {
+  #boxScreen {
+    padding-left: 17%;
+    padding-right: 11%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #Global{
+    padding-right: 75px;
+  } 
+  #imagen {
+    padding-left: 4px;
+  }
+}
+

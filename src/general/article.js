@@ -68,12 +68,12 @@ const UseStyles = makeStyles({
 });
 
 const Item = styled(Paper)(({ theme }) => ({
-  ...theme.typography.body2,
-  textAlign: "center",
+	...theme.typography.body2,
+	textAlign: "center",
 }));
 
 function article() {
-  const classes = UseStyles();
+	const classes = UseStyles();
 
   return (
     <>
@@ -102,7 +102,7 @@ function article() {
             <Item>
               <Box className={classes.manOneBlackBox2}>
                 <Typography variant="h5" className={classes.titleManTwo}>
-                  <b>COLECION 2012</b>
+                  <b>COLECION 2022</b>
                 </Typography>
                 <div className={classes.lineaTwo}></div>
                 <Typography className={classes.txtManTwo}>

@@ -22,7 +22,7 @@ import B10 from '../assets/Carrusel/B10.png';
 const useStyles = makeStyles((theme) => ({
     root: {
         flexGrow: 1,
-        height: 550,
+        height: 500,
     },
 
     gridRoot: {
@@ -37,7 +37,6 @@ const useStyles = makeStyles((theme) => ({
 
     },
     paper: {
-
         backgroundColor: 'transparent',
         height: '100%',
         boxShadow: 'none',
@@ -46,7 +45,6 @@ const useStyles = makeStyles((theme) => ({
         '&:hover': {
             backgroundColor: 'rgba(255,255,255,0.4)',
             'box-shadow': 'none'
-
         },
         '&:hover .MuiAvatar-root': {
             backgroundColor: 'rgb(255, 87, 34, 1)',
@@ -55,18 +53,15 @@ const useStyles = makeStyles((theme) => ({
     },
     buttonNavigation: {
         width: '100%',
-        height: '100%',
+			  height: '100%',
     },
     buttonIcon: {
         background: 'red',
     },
     orange: {
-
         color: 'rgb(255, 255, 255, 0.2)',
         backgroundColor: 'rgb(255, 87, 34, 0.2)',
     },
-
-
 }));
 
 

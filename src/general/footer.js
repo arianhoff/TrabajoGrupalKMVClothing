@@ -8,6 +8,7 @@ import "../assets/home.png";
 import Chip from "@mui/material/Chip";
 import { makeStyles } from "@material-ui/core";
 
+
 const useStyles = makeStyles({
   boton: {
     backgroundColor: "#1565C0 !important",
@@ -27,8 +28,8 @@ const useStyles = makeStyles({
   },
   categoriasDiv: {
     paddingTop: "60px",
-    paddingLeft: "10px",
-    paddingRight: "50px",
+    paddingLeft: "30px",
+    paddingRight: "30px",
     color: "white !important",
   },
   tituloCat: {
@@ -74,7 +75,8 @@ const useStyles = makeStyles({
     paddingTop: "20px",
     paddingBottom: "50px",
     display: "flex",
-    marginLeft: "57px",
+    // marginLeft: '10px'
+		justifyContent: "center",
   },
   nosotros: {
     paddingTop: "60px",
@@ -87,12 +89,13 @@ const useStyles = makeStyles({
     fontFamily: "Roboto, sans-serif",
     fontWeight: "bold",
     display: "flex",
-    justifyContent: "center",
+		justifyContent: "center",
+		textAlign: "center",
     marginTop: "3px",
   },
   email: {
-    paddingTop: "22px",
-    paddingLeft: "5px",
+    paddingTop: "20px",
+    paddingLeft: "20px",
   },
   global: {
     width: "auto",
@@ -126,8 +129,7 @@ const Footer = () => {
                 productos y costos nacionales. Hoy casi 20 años después de su
                 nacimiento, la marca está instalada como líder en el segmento
                 e-commerce de ropa masculina, vendiendo a clientes de todo el
-                País. Además cuenta con presencia en varias tiendas multimarca
-                en los principales Shoppings.
+                País.
               </p>
             </div>
           </Grid>
@@ -207,7 +209,7 @@ const Footer = () => {
                   label="Nombre"
                   size="small"
                   variant="filled"
-                  style={{ width: "40%", marginLeft: "-15px" }}
+                  style={{ width: "40%", marginLeft: "-7px" }}
                   className={classes.emailGlobal}
                 />
                 <TextField
@@ -223,7 +225,7 @@ const Footer = () => {
                   className={classes.boton}
                   href="/"
                   variant="contained"
-                  inputlabelprops={"boton-classname"}
+									inputlabelprops={"boton-classname"} style={{ width: "40%" }}
                 >
                   Enviar
                 </Button>

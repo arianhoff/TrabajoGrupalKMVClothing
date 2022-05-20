@@ -4,6 +4,7 @@ import "../style/estiloGeneral.css";
 import sarkany from "../assets/sarkany.png";
 import { makeStyles } from "@material-ui/core";
 
+
 const useStyles = makeStyles({
   butonProvedor: {
     backgroundColor: "#1565C0 !important",
@@ -13,7 +14,7 @@ const useStyles = makeStyles({
     borderRadius: "5px !important",
     fontWeight: "bold",
     marginTop: '230px !important',
-    marginRight: '45px !important'
+    marginRight: '20px !important'
   },
   boxPrincipal: {
     height: "381px !important",

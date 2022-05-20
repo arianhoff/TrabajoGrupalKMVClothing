@@ -9,20 +9,21 @@ import Article from "./article";
 import Proveedor from "./Proveedor";
 import Carousel from "./carousel";
 import { Cartprovider } from "../cart/Context/CartContext";
-import Products from "./homeCardKMV";
+import Productos from "./homeCardTwoKMV";
 import Separador from "./separador";
+
 
 const RoutesKMV = () => {
   return (
     <Cartprovider>
-      <Router>
+      <Router> 
         <EnviosKMV />
         <Navbar />
         <Header />
         <Separador />
         <Article />
         <Separador />
-        <Products />
+        <Productos />
         <Proveedor />
         <Carousel />
         <Redes />

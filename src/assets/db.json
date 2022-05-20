@@ -1,0 +1,75 @@
+{
+    "Vestimenta":[
+        {
+            "id": 1,
+            "price": 3500,
+            "amount":0,
+            "img": "https://i.imgur.com/tmtfcaL.png",
+            "info": "Riñonera",
+            "desc": "La riñonera Isabella es nuestra favorita a la hora de necesitar manos libres con estilo.",
+            "key":"c1"
+        },
+        {
+            "id": 2,
+            "price": 1700,
+            "amount":0,
+            "img": "https://i.imgur.com/pO0cs38.png",
+            "info": "Cinturón",
+            "desc": "Sofisticado cinturon para estar elegante todo el dia.",
+            "key":"c2"
+        },
+        {
+            "id": 3,
+            "price": 2900,
+            "amount":0,
+            "img": "https://i.imgur.com/uvHaJwX.png",
+            "info": "Gorra",
+            "desc": "Nuestra gorra deportiva para cuidarte del sol con estilo.",
+            "key":"c3"
+        },
+        {
+            "id": 4,
+            "price": 4800,
+            "amount":0,
+            "img": "https://i.imgur.com/u6ZU72a.png",
+            "info": "Mochila",
+            "desc": "Practica mochila clasica negra para llevar todo lo necesario.",
+            "key":"c4"
+        },
+        {
+            "id": 5,
+            "price": 4300,
+            "amount":0,
+            "img": "https://i.imgur.com/ky03uAi.png",
+            "info": "Bolso",
+            "desc": "Con nuestro bolso iras a trabajar elegante sin dejar de lado la practicidad.",
+            "key":"c5"
+        },
+        {
+            "id": 6,
+            "price": 12300,
+            "amount":0,
+            "img": "https://i.imgur.com/JtPqm4K.png",
+            "info": "Bota",
+            "desc": "La bota resistente al agua para ir con estilo los dias de lluvia.",
+            "key":"c6"
+        },
+        {
+            "id": 7,
+            "price": 17000,
+            "amount":0,
+            "img": "https://i.imgur.com/7xvCNIN.png",
+            "info": "Borcego",
+            "desc": "Un básico infaltable para la noche, nuestros borcegos completan un outfit moderno y sofisticado.",
+            "key":"c7"
+        }, {
+            "id": 8,
+            "price": 11500,
+            "amount":0,
+            "img": "https://i.imgur.com/Zh4i5iI.png",
+            "info": "Zapato",
+            "desc": "Nuestra linea de Zapatos pueden ser utilizados tanto para eventos como de forma diaria.",
+            "key":"c8"
+        }
+    ]
+     }
