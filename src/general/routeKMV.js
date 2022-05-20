@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 import Redes from "./socialMediaKMV";
 import Navbar from "./navbarKMV";
 import Footer from "./footer";
@@ -9,7 +9,7 @@ import Article from "./article";
 import Proveedor from "./Proveedor";
 import Carousel from "./carousel";
 import { Cartprovider } from "../cart/Context/CartContext";
-import Products from "./homeCardKMV";
+import Productos from "./homeCardTwoKMV";
 import Separador from "./separador";
 
 
@@ -23,7 +23,7 @@ const RoutesKMV = () => {
         <Separador />
         <Article />
         <Separador />
-        <Products />
+        <Productos />
         <Proveedor />
         <Carousel />
         <Redes />

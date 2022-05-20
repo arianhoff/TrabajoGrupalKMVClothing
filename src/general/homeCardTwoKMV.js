@@ -1,12 +1,11 @@
-import * as React from "react";
+import { useState, useEffect } from "react";
+import { Button } from "@mui/material";
+import { makeStyles } from "@material-ui/core";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
-import "../style/estiloGeneral.css";
-import { makeStyles } from "@material-ui/core";
-import { Button } from "@mui/material";
-import { ProductsData } from "../cart/Data/ProductsData";
 import { useContext } from "react";
 import { CartContext } from "../cart/Context/CartContext";
+import axios from "axios";
 
 const useStyles = makeStyles({
   CartImagen: {
@@ -45,7 +44,7 @@ const useStyles = makeStyles({
     paddingRight: "10px",
     width: "200px",
     height: "170px",
-    fontSize:'15px'
+    fontSize: "15px",
   },
   boxGlobal: {
     paddingTop: "100px",
@@ -66,22 +65,30 @@ const useStyles = makeStyles({
     height: "30px",
     borderRadius: "5px",
     marginTop: "10px",
-    fontWeight: 'bold'
+    fontWeight: "bold",
   },
 });
 
+function Productos() {
+  const [products, setProducts] = useState([]);
 
-
-function Productos (){
+  useEffect(() => {
+    const obtenerVestimenta = async () => {
+      axios.get("http://localhost:3000/vestimenta").then((response) => {
+        setProducts(response.data);
+      });
+    };
+    obtenerVestimenta();
+  }, []);
 
   const classes = useStyles();
 
-  const {addItemToCart} = useContext(CartContext)
+  const { addItemToCart } = useContext(CartContext);
 
   return (
     <Box sx={{ flexGrow: 1 }} className={classes.boxGlobal} id="boxScreen">
       <Grid container spacing={3}>
-        {ProductsData.map((product, i) => {
+        {products.map((product, i) => {
           return (
             <Grid item xs={12} sm={6} md={4} lg={3} key={i}>
               <Box className={classes.cart} id="Cart">
@@ -91,7 +98,9 @@ function Productos (){
                   </div>
                 </div>
                 <div className={classes.cartDesc}>
-                  <h2>{product.info} - ${product.price}</h2>
+                  <h2>
+                    {product.info} - ${product.price}
+                  </h2>
                   <p>{product.desc}</p>
                 </div>
                 <div>
@@ -109,5 +118,6 @@ function Productos (){
       </Grid>
     </Box>
   );
-};
+}
+
 export default Productos;

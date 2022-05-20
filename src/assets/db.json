@@ -1,76 +1,75 @@
 {
-    "Products":[
+    "Vestimenta":[
         {
             "id": 1,
-            "price": 10,
+            "price": 3500,
             "amount":0,
-            "img": "src/cart/assetsCart/1.png",
+            "img": "https://i.imgur.com/tmtfcaL.png",
             "info": "Riñonera",
             "desc": "La riñonera Isabella es nuestra favorita a la hora de necesitar manos libres con estilo.",
             "key":"c1"
         },
         {
             "id": 2,
-            "price": 10,
+            "price": 1700,
             "amount":0,
-            "img": "src/cart/assetsCart/1.png",
-            "info": "Riñonera",
-            "desc": "La riñonera Isabella es nuestra favorita a la hora de necesitar manos libres con estilo.",
+            "img": "https://i.imgur.com/pO0cs38.png",
+            "info": "Cinturón",
+            "desc": "Sofisticado cinturon para estar elegante todo el dia.",
             "key":"c2"
         },
         {
             "id": 3,
-            "price": 10,
+            "price": 2900,
             "amount":0,
-            "img": "src/cart/assetsCart/1.png",
-            "info": "Riñonera",
+            "img": "https://i.imgur.com/uvHaJwX.png",
+            "info": "Gorra",
             "desc": "La riñonera Isabella es nuestra favorita a la hora de necesitar manos libres con estilo.",
             "key":"c3"
         },
         {
             "id": 4,
-            "price": 10,
+            "price": 4800,
             "amount":0,
-            "img": "src/cart/assetsCart/1.png",
-            "info": "Riñonera",
+            "img": "https://i.imgur.com/u6ZU72a.png",
+            "info": "Mochila",
             "desc": "La riñonera Isabella es nuestra favorita a la hora de necesitar manos libres con estilo.",
             "key":"c4"
         },
         {
             "id": 5,
-            "price": 10,
+            "price": 4300,
             "amount":0,
-            "img": "src/cart/assetsCart/1.png",
-            "info": "Riñonera",
+            "img": "https://i.imgur.com/ky03uAi.png",
+            "info": "Bolso",
             "desc": "La riñonera Isabella es nuestra favorita a la hora de necesitar manos libres con estilo.",
             "key":"c5"
         },
         {
             "id": 6,
-            "price": 10,
+            "price": 12300,
             "amount":0,
-            "img": "src/cart/assetsCart/1.png",
-            "info": "Riñonera",
+            "img": "https://i.imgur.com/JtPqm4K.png",
+            "info": "Bota",
             "desc": "La riñonera Isabella es nuestra favorita a la hora de necesitar manos libres con estilo.",
             "key":"c6"
         },
         {
             "id": 7,
-            "price": 10,
+            "price": 17000,
             "amount":0,
-            "img": "src/cart/assetsCart/1.png",
-            "info": "Riñonera",
+            "img": "https://i.imgur.com/7xvCNIN.png",
+            "info": "Borcego",
             "desc": "La riñonera Isabella es nuestra favorita a la hora de necesitar manos libres con estilo.",
             "key":"c7"
         }, {
             "id": 8,
-            "price": 10,
+            "price": 11500,
             "amount":0,
-            "img": "src/cart/assetsCart/1.png",
-            "info": "Riñonera",
+            "img": "https://i.imgur.com/Zh4i5iI.png",
+            "info": "Zapato",
             "desc": "La riñonera Isabella es nuestra favorita a la hora de necesitar manos libres con estilo.",
             "key":"c8"
         }
-    ],
-    "cart":[]
+    ]
      }
