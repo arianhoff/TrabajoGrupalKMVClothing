@@ -24,7 +24,7 @@
             "amount":0,
             "img": "https://i.imgur.com/uvHaJwX.png",
             "info": "Gorra",
-            "desc": "La riñonera Isabella es nuestra favorita a la hora de necesitar manos libres con estilo.",
+            "desc": "Nuestra gorra deportiva para cuidarte del sol con estilo.",
             "key":"c3"
         },
         {
@@ -33,7 +33,7 @@
             "amount":0,
             "img": "https://i.imgur.com/u6ZU72a.png",
             "info": "Mochila",
-            "desc": "La riñonera Isabella es nuestra favorita a la hora de necesitar manos libres con estilo.",
+            "desc": "Practica mochila clasica negra para llevar todo lo necesario.",
             "key":"c4"
         },
         {
@@ -42,7 +42,7 @@
             "amount":0,
             "img": "https://i.imgur.com/ky03uAi.png",
             "info": "Bolso",
-            "desc": "La riñonera Isabella es nuestra favorita a la hora de necesitar manos libres con estilo.",
+            "desc": "Con nuestro bolso iras a trabajar elegante sin dejar de lado la practicidad.",
             "key":"c5"
         },
         {
@@ -51,7 +51,7 @@
             "amount":0,
             "img": "https://i.imgur.com/JtPqm4K.png",
             "info": "Bota",
-            "desc": "La riñonera Isabella es nuestra favorita a la hora de necesitar manos libres con estilo.",
+            "desc": "La bota resistente al agua para ir con estilo los dias de lluvia.",
             "key":"c6"
         },
         {
@@ -60,7 +60,7 @@
             "amount":0,
             "img": "https://i.imgur.com/7xvCNIN.png",
             "info": "Borcego",
-            "desc": "La riñonera Isabella es nuestra favorita a la hora de necesitar manos libres con estilo.",
+            "desc": "Un básico infaltable para la noche, nuestros borcegos completan un outfit moderno y sofisticado.",
             "key":"c7"
         }, {
             "id": 8,
@@ -68,7 +68,7 @@
             "amount":0,
             "img": "https://i.imgur.com/Zh4i5iI.png",
             "info": "Zapato",
-            "desc": "La riñonera Isabella es nuestra favorita a la hora de necesitar manos libres con estilo.",
+            "desc": "Nuestra linea de Zapatos pueden ser utilizados tanto para eventos como de forma diaria.",
             "key":"c8"
         }
     ]
