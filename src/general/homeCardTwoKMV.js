@@ -74,7 +74,7 @@ function Productos() {
 
   useEffect(() => {
     const obtenerVestimenta = async () => {
-      axios.get("http://localhost:3000/vestimenta").then((response) => {
+      axios.get("https://kmv-api.herokuapp.com/Vestimenta").then((response) => {
         setProducts(response.data);
       });
     };
